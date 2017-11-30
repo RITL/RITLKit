@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol TKEnity
+@protocol RITLEnity
 
 /// 读出真正的数据data
 @property (nonatomic, copy, nullable, readonly) NSDictionary *proxy_real_enity;

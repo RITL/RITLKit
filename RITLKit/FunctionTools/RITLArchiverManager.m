@@ -6,25 +6,25 @@
 //  Copyright © 2016年 wangpj. All rights reserved.
 //
 
-#import "TKArchiverManager.h"
+#import "RITLArchiverManager.h"
 
 static NSString * RITLArchiverFolderName = @"RITLArchiverFolderName_Default";
 
-@implementation TKArchiverManager
+@implementation RITLArchiverManager
 
 
 #pragma mark - public
 
--(BOOL)startArchiver:(NSArray<id<NSCoding>> *)archiverObjects document:(NSString *)document error:(NSError * _Nullable __autoreleasing *)error
+-(BOOL)ritl_startArchiver:(NSArray<id<NSCoding>> *)archiverObjects document:(NSString *)document error:(NSError * _Nullable __autoreleasing *)error
 {
-    return [self startArchiver:archiverObjects document:document error:error isReplace:true];
+    return [self ritl_startArchiver:archiverObjects document:document error:error isReplace:true];
 }
 
 
 
 
 
--(BOOL)startArchiver:(NSArray<id<NSCoding>> *)archiverObjects document:(NSString *)document error:(NSError * _Nullable __autoreleasing *)error isReplace:(BOOL)replace
+-(BOOL)ritl_startArchiver:(NSArray<id<NSCoding>> *)archiverObjects document:(NSString *)document error:(NSError * _Nullable __autoreleasing *)error isReplace:(BOOL)replace
 {
     //拼接路径文件
     NSString * path = [[self p_defaultFullArchiverPath] stringByAppendingPathComponent:document];
@@ -47,7 +47,7 @@ static NSString * RITLArchiverFolderName = @"RITLArchiverFolderName_Default";
 
 
 
--(NSArray<id<NSCoding>> *)readArchiverObjectsInDocument:(NSString *)document
+-(NSArray<id<NSCoding>> *)ritl_readArchiverObjectsInDocument:(NSString *)document
 {
     //拼接路径
     NSString * path = [[self p_defaultFullArchiverPath] stringByAppendingPathComponent:document];

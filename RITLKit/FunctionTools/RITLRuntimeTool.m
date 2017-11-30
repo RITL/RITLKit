@@ -1,17 +1,17 @@
 //
-//  TKRuntimeTool.m
+//  RITLRuntimeTool.m
 //  EattaClient
 //
 //  Created by YueWen on 2017/9/14.
 //  Copyright © 2017年 ryden. All rights reserved.
 //
 
-#import "TKRuntimeTool.h"
+#import "RITLRuntimeTool.h"
 #import <objc/runtime.h>
 
 
 
-void TK_swizzledInstanceSelector(Class classObject,SEL originSel,SEL swizzledSel)
+void RITL_swizzledInstanceSelector(Class classObject,SEL originSel,SEL swizzledSel)
 {
     Method originMethod = class_getInstanceMethod(classObject, originSel);
     Method swizzledMethod = class_getInstanceMethod(classObject, swizzledSel);
@@ -36,7 +36,7 @@ void TK_swizzledInstanceSelector(Class classObject,SEL originSel,SEL swizzledSel
 
 
 
-void TK_swizzledClassSelector(Class classObject,SEL originSel,SEL swizzledSel)
+void RITL_swizzledClassSelector(Class classObject,SEL originSel,SEL swizzledSel)
 {
     Method originMethod = class_getClassMethod(classObject, originSel);
     Method swizzledMethod = class_getClassMethod(classObject, swizzledSel);

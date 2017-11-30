@@ -6,9 +6,9 @@
 //  Copyright © 2016年 YueWen. All rights reserved.
 //
 
-#import "TKTimer.h"
+#import "RITLTimer.h"
 
-@implementation TKTimer
+@implementation RITLTimer
 
 -(instancetype)initTimer:(id)target selector:(SEL)aSelector
 {
@@ -50,7 +50,7 @@
 + (void)blockFire:(NSArray *)userInfo
 {
     //获得block对象
-    TKTimerBlock block = userInfo.lastObject;
+    RITLTimerBlock block = userInfo.lastObject;
     
     //获得info
     id info = userInfo.firstObject;
@@ -67,7 +67,7 @@
 +(NSTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)timeInterval target:(id)aTarget selector:(SEL)aSelector userInfo:(id)userInfo repeats:(BOOL)isRepeats
 {
     
-    TKTimer * timerObject = [TKTimer bannerViewTimer:aTarget selector:aSelector];
+    RITLTimer * timerObject = [RITLTimer bannerViewTimer:aTarget selector:aSelector];
     
     //转移强引用对象
     timerObject.timer = [NSTimer scheduledTimerWithTimeInterval:timeInterval target:timerObject selector:@selector(fire:) userInfo:userInfo repeats:isRepeats];
@@ -81,7 +81,7 @@
 
 
 
-+(NSTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)timeInterval userInfo:(id)userInfo repeats:(BOOL)isRepeats BlockHandle:(TKTimerBlock)blockHandle
++(NSTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)timeInterval userInfo:(id)userInfo repeats:(BOOL)isRepeats BlockHandle:(RITLTimerBlock)blockHandle
 {
     NSArray * userInfoArray;
     

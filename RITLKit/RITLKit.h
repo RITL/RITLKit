@@ -18,8 +18,8 @@
 #import "RITLWebScriptMessageHandler.h"
 #import "RITLScriptMessageHandler.h"
 
+/// 拓展方法
 #import "RITLExtension.h"
-
 
 
 #endif /* RITLTool_h */

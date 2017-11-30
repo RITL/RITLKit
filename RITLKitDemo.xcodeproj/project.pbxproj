@@ -41,6 +41,10 @@
 		DB41C9221FCFD1370035AC4A /* RITLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C91D1FCFD1370035AC4A /* RITLButton.m */; };
 		DB41C9231FCFD1370035AC4A /* RITLTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C91F1FCFD1370035AC4A /* RITLTabBarItem.m */; };
 		DB41C9241FCFD1370035AC4A /* RITLTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C9211FCFD1370035AC4A /* RITLTitleButton.m */; };
+		DB41C92F1FCFD2090035AC4A /* RITLArchiverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C9271FCFD2090035AC4A /* RITLArchiverManager.m */; };
+		DB41C9301FCFD2090035AC4A /* RITLDictionaryProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C9291FCFD2090035AC4A /* RITLDictionaryProxy.m */; };
+		DB41C9311FCFD2090035AC4A /* RITLRuntimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C92C1FCFD2090035AC4A /* RITLRuntimeTool.m */; };
+		DB41C9321FCFD2090035AC4A /* RITLTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C92E1FCFD2090035AC4A /* RITLTimer.m */; };
 		E0C844804EF041BE4AADA667 /* libPods-RITLKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C2315AEE5D22FD49407BF5 /* libPods-RITLKitDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +125,15 @@
 		DB41C91F1FCFD1370035AC4A /* RITLTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLTabBarItem.m; sourceTree = "<group>"; };
 		DB41C9201FCFD1370035AC4A /* RITLTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLTitleButton.h; sourceTree = "<group>"; };
 		DB41C9211FCFD1370035AC4A /* RITLTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLTitleButton.m; sourceTree = "<group>"; };
+		DB41C9261FCFD2090035AC4A /* RITLArchiverManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLArchiverManager.h; sourceTree = "<group>"; };
+		DB41C9271FCFD2090035AC4A /* RITLArchiverManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLArchiverManager.m; sourceTree = "<group>"; };
+		DB41C9281FCFD2090035AC4A /* RITLDictionaryProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLDictionaryProxy.h; sourceTree = "<group>"; };
+		DB41C9291FCFD2090035AC4A /* RITLDictionaryProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLDictionaryProxy.m; sourceTree = "<group>"; };
+		DB41C92A1FCFD2090035AC4A /* RITLEnity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLEnity.h; sourceTree = "<group>"; };
+		DB41C92B1FCFD2090035AC4A /* RITLRuntimeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLRuntimeTool.h; sourceTree = "<group>"; };
+		DB41C92C1FCFD2090035AC4A /* RITLRuntimeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLRuntimeTool.m; sourceTree = "<group>"; };
+		DB41C92D1FCFD2090035AC4A /* RITLTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLTimer.h; sourceTree = "<group>"; };
+		DB41C92E1FCFD2090035AC4A /* RITLTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +205,7 @@
 			children = (
 				DB41C8C61FCF94840035AC4A /* RITLKit.h */,
 				DB41C9191FCFCF380035AC4A /* RITLExtension.h */,
+				DB41C9251FCFD2090035AC4A /* FunctionTools */,
 				DB41C91A1FCFD1370035AC4A /* View */,
 				DB41C9151FCFCE5A0035AC4A /* ScrollPageController */,
 				DB41C8871FCF94840035AC4A /* Category */,
@@ -319,6 +333,22 @@
 				DB41C9211FCFD1370035AC4A /* RITLTitleButton.m */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		DB41C9251FCFD2090035AC4A /* FunctionTools */ = {
+			isa = PBXGroup;
+			children = (
+				DB41C9261FCFD2090035AC4A /* RITLArchiverManager.h */,
+				DB41C9271FCFD2090035AC4A /* RITLArchiverManager.m */,
+				DB41C9281FCFD2090035AC4A /* RITLDictionaryProxy.h */,
+				DB41C9291FCFD2090035AC4A /* RITLDictionaryProxy.m */,
+				DB41C92A1FCFD2090035AC4A /* RITLEnity.h */,
+				DB41C92B1FCFD2090035AC4A /* RITLRuntimeTool.h */,
+				DB41C92C1FCFD2090035AC4A /* RITLRuntimeTool.m */,
+				DB41C92D1FCFD2090035AC4A /* RITLTimer.h */,
+				DB41C92E1FCFD2090035AC4A /* RITLTimer.m */,
+			);
+			path = FunctionTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,13 +481,16 @@
 				DB41C8EA1FCF94840035AC4A /* UIViewController+RITLExtension.m in Sources */,
 				DB41C8751FCF93FB0035AC4A /* ViewController.m in Sources */,
 				DB41C8E51FCF94840035AC4A /* UISearchBar+RITLCustomColor.m in Sources */,
+				DB41C9311FCFD2090035AC4A /* RITLRuntimeTool.m in Sources */,
 				DB41C9121FCFCE3A0035AC4A /* LLSegmentBarConfig.m in Sources */,
 				DB41C9241FCFD1370035AC4A /* RITLTitleButton.m in Sources */,
+				DB41C9301FCFD2090035AC4A /* RITLDictionaryProxy.m in Sources */,
 				DB41C9221FCFD1370035AC4A /* RITLButton.m in Sources */,
 				DB41C9051FCFCB0E0035AC4A /* RITLWebScriptMessageHandler.m in Sources */,
 				DB41C8801FCF93FB0035AC4A /* main.m in Sources */,
 				DB41C8DA1FCF94840035AC4A /* CAGradientLayer+RITLGradientLayer.m in Sources */,
 				DB41C8E31FCF94840035AC4A /* UIImage+RITLExtension.m in Sources */,
+				DB41C9321FCFD2090035AC4A /* RITLTimer.m in Sources */,
 				DB41C9141FCFCE3A0035AC4A /* UIView+LLSegmentBar.m in Sources */,
 				DB41C9181FCFCE5A0035AC4A /* RITLScrollPageViewController.m in Sources */,
 				DB41C8DC1FCF94840035AC4A /* NSDate+RITLExtension.m in Sources */,
@@ -474,6 +507,7 @@
 				DB41C8DB1FCF94840035AC4A /* NSArray+RITLExtension.m in Sources */,
 				DB41C8E71FCF94840035AC4A /* UIView+RITLFrameChanged.m in Sources */,
 				DB41C8E21FCF94840035AC4A /* UIControl+RITLBlockButton.m in Sources */,
+				DB41C92F1FCFD2090035AC4A /* RITLArchiverManager.m in Sources */,
 				DB41C8E41FCF94840035AC4A /* UINavigationController+RITLExtension.m in Sources */,
 				DB41C8721FCF93FB0035AC4A /* AppDelegate.m in Sources */,
 				DB41C8E81FCF94840035AC4A /* UIView+RITLExtension.m in Sources */,

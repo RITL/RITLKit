@@ -6,9 +6,9 @@
 //  Copyright © 2017年 ryden. All rights reserved.
 //
 
-#import "TKDictionaryProxy.h"
+#import "RITLDictionaryProxy.h"
 #import <Foundation/Foundation.h>
-#import "TKEnity.h"
+#import "RITLEnity.h"
 
 
 @interface NSDictionary (TKDictionaryProxy)
@@ -31,7 +31,7 @@
 
 
 /// 使用字典模拟进行的去Model化
-@interface TKDictionaryProxy : NSProxy
+@interface RITLDictionaryProxy : NSProxy
 
 - (instancetype)initWithData:(NSDictionary *)data;
 
@@ -39,13 +39,13 @@
 
 
 
-@interface TKDictionaryProxy ()
+@interface RITLDictionaryProxy ()
 
 @property (nonatomic, strong)NSMutableDictionary *innerDictionary;
 
 @end
 
-@implementation TKDictionaryProxy
+@implementation RITLDictionaryProxy
 
 
 -(instancetype)initWithData:(NSDictionary *)data
@@ -180,7 +180,7 @@
 
 id TKEnityCreateWithData(NSDictionary *data)
 {
-    return [[TKDictionaryProxy alloc]initWithData:data];
+    return [[RITLDictionaryProxy alloc]initWithData:data];
 }
 
 

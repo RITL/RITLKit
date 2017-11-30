@@ -1,5 +1,5 @@
 //
-//  TKDictionaryProxy.h
+//  RITLDictionaryProxy.h
 //  EattaClient
 //
 //  Created by YueWen on 2017/9/20.
@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /// 进行model化
-extern id TKEnityCreateWithData(NSDictionary *data);
+extern id RITLEnityCreateWithData(NSDictionary *data);
 
 
 NS_ASSUME_NONNULL_END
