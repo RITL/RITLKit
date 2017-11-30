@@ -17,13 +17,14 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/RITL/RITLKit.git", :tag => "#{s.version}" }
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.source_files  = "RITLKit/**/*.{h,m}"
+  s.public_header_files = 'RITLKit/**/*.{h}'
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.frameworks = "Foundation", "UIKit","WebKit"
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.requires_arc = true
   s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" } 
 
-  
+
   s.public_header_files = 'RITLKit/RITLKit.h'
   s.source_files = 'RITLKit/RITLKit.h' 
   s.dependency "Masonry"
