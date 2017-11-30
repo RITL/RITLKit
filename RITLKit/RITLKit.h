@@ -9,9 +9,7 @@
 #ifndef RITLKit_h
 #define RITLKit_h
 
-#import "RITLWebViewController.h"
-#import "RITLWebScriptMessageHandler.h"
-#import "RITLScriptMessageHandler.h"
+
 #import "UIView+RITLExtension.h"
 #import "NSDate+RITLExtension.h"
 #import "NSArray+RITLExtension.h"
