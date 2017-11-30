@@ -6,12 +6,12 @@
 //  Copyright © 2017年 ryden. All rights reserved.
 //
 
-#import "ETButton.h"
+#import "RITLButton.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 /// 只显示文本的button
-@interface RITLTitleButton : ETButton
+@interface RITLTitleButton : RITLButton
 
 /// 正常下的文本字体,默认System:14px
 @property (nonatomic, strong) UIFont * normalTextFont;

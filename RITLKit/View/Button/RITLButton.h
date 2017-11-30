@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  自定义button,类型为上图下文字
  */
-@interface ETButton : UIButton
+@interface RITLButton : UIButton
 
 
 /// 文字标签

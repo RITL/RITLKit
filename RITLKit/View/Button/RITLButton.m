@@ -6,19 +6,19 @@
 //  Copyright © 2017年 ryden. All rights reserved.
 //
 
-#import "ETButton.h"
+#import "RITLButton.h"
 #import "UIView+RITLFrameChanged.h"
 #import <Masonry/Masonry.h>
 
 
-@interface ETButton ()
+@interface RITLButton ()
 
 @property (nonatomic, strong) UIView * layerView;
 
 @end
 
 
-@implementation ETButton
+@implementation RITLButton
 
 
 @synthesize titleLabel = _titleLabel;

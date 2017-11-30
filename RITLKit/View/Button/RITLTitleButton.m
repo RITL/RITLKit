@@ -7,6 +7,7 @@
 //
 
 #import "RITLTitleButton.h"
+#import "RITLExtension.h"
 #import <Masonry/Masonry.h>
 
 @implementation RITLTitleButton
@@ -105,7 +106,8 @@
 {
     if (!_normalTextFont) {
         
-        return [RITLUnility checkWhetherExistFontWithName:@"PingFangSC-Regular" AndSize:(14)];
+        return [UIFont fontWithName:RITLFontPingFangSC_Regular size:14];
+        
     }
     
     return _normalTextFont;
@@ -116,7 +118,7 @@
 {
     if (!_selectedTextColor) {
         
-        return [RITLUnility checkWhetherExistFontWithName:@"PingFangSC-Regular" AndSize:(16)];
+        return [UIFont fontWithName:RITLFontPingFangSC_Regular size:16];
     }
     
     return _selectedTextFont;

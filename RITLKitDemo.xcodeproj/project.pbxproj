@@ -38,6 +38,9 @@
 		DB41C9131FCFCE3A0035AC4A /* LLSegmentBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C90E1FCFCE390035AC4A /* LLSegmentBarVC.m */; };
 		DB41C9141FCFCE3A0035AC4A /* UIView+LLSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C9101FCFCE3A0035AC4A /* UIView+LLSegmentBar.m */; };
 		DB41C9181FCFCE5A0035AC4A /* RITLScrollPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C9171FCFCE5A0035AC4A /* RITLScrollPageViewController.m */; };
+		DB41C9221FCFD1370035AC4A /* RITLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C91D1FCFD1370035AC4A /* RITLButton.m */; };
+		DB41C9231FCFD1370035AC4A /* RITLTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C91F1FCFD1370035AC4A /* RITLTabBarItem.m */; };
+		DB41C9241FCFD1370035AC4A /* RITLTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C9211FCFD1370035AC4A /* RITLTitleButton.m */; };
 		E0C844804EF041BE4AADA667 /* libPods-RITLKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C2315AEE5D22FD49407BF5 /* libPods-RITLKitDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +115,12 @@
 		DB41C9161FCFCE5A0035AC4A /* RITLScrollPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLScrollPageViewController.h; sourceTree = "<group>"; };
 		DB41C9171FCFCE5A0035AC4A /* RITLScrollPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLScrollPageViewController.m; sourceTree = "<group>"; };
 		DB41C9191FCFCF380035AC4A /* RITLExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RITLExtension.h; sourceTree = "<group>"; };
+		DB41C91C1FCFD1370035AC4A /* RITLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLButton.h; sourceTree = "<group>"; };
+		DB41C91D1FCFD1370035AC4A /* RITLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLButton.m; sourceTree = "<group>"; };
+		DB41C91E1FCFD1370035AC4A /* RITLTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLTabBarItem.h; sourceTree = "<group>"; };
+		DB41C91F1FCFD1370035AC4A /* RITLTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLTabBarItem.m; sourceTree = "<group>"; };
+		DB41C9201FCFD1370035AC4A /* RITLTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLTitleButton.h; sourceTree = "<group>"; };
+		DB41C9211FCFD1370035AC4A /* RITLTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLTitleButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +192,7 @@
 			children = (
 				DB41C8C61FCF94840035AC4A /* RITLKit.h */,
 				DB41C9191FCFCF380035AC4A /* RITLExtension.h */,
+				DB41C91A1FCFD1370035AC4A /* View */,
 				DB41C9151FCFCE5A0035AC4A /* ScrollPageController */,
 				DB41C8871FCF94840035AC4A /* Category */,
 				DB41C8AB1FCF94840035AC4A /* extobjc */,
@@ -288,6 +298,27 @@
 				DB41C9171FCFCE5A0035AC4A /* RITLScrollPageViewController.m */,
 			);
 			path = ScrollPageController;
+			sourceTree = "<group>";
+		};
+		DB41C91A1FCFD1370035AC4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB41C91B1FCFD1370035AC4A /* Button */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB41C91B1FCFD1370035AC4A /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				DB41C91C1FCFD1370035AC4A /* RITLButton.h */,
+				DB41C91D1FCFD1370035AC4A /* RITLButton.m */,
+				DB41C91E1FCFD1370035AC4A /* RITLTabBarItem.h */,
+				DB41C91F1FCFD1370035AC4A /* RITLTabBarItem.m */,
+				DB41C9201FCFD1370035AC4A /* RITLTitleButton.h */,
+				DB41C9211FCFD1370035AC4A /* RITLTitleButton.m */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,6 +452,8 @@
 				DB41C8751FCF93FB0035AC4A /* ViewController.m in Sources */,
 				DB41C8E51FCF94840035AC4A /* UISearchBar+RITLCustomColor.m in Sources */,
 				DB41C9121FCFCE3A0035AC4A /* LLSegmentBarConfig.m in Sources */,
+				DB41C9241FCFD1370035AC4A /* RITLTitleButton.m in Sources */,
+				DB41C9221FCFD1370035AC4A /* RITLButton.m in Sources */,
 				DB41C9051FCFCB0E0035AC4A /* RITLWebScriptMessageHandler.m in Sources */,
 				DB41C8801FCF93FB0035AC4A /* main.m in Sources */,
 				DB41C8DA1FCF94840035AC4A /* CAGradientLayer+RITLGradientLayer.m in Sources */,
@@ -431,6 +464,7 @@
 				DB41C8E61FCF94840035AC4A /* UITableView+RITLCellRegister.m in Sources */,
 				DB41C8DE1FCF94840035AC4A /* NSNumber+RITLExtension.m in Sources */,
 				DB41C8EB1FCF94840035AC4A /* EXTRuntimeExtensions.m in Sources */,
+				DB41C9231FCFD1370035AC4A /* RITLTabBarItem.m in Sources */,
 				DB41C8DD1FCF94840035AC4A /* NSDictionary+RITLExtension.m in Sources */,
 				DB41C8E11FCF94840035AC4A /* UIColor+RITLExtension.m in Sources */,
 				DB41C9131FCFCE3A0035AC4A /* LLSegmentBarVC.m in Sources */,

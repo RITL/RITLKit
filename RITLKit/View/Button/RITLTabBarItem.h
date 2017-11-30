@@ -1,17 +1,17 @@
 //
-//  ETTabBarItem.h
+//  RITLTabBarItem.h
 //  XiaoNongDingClient
 //
 //  Created by YueWen on 2017/5/4.
 //  Copyright © 2017年 ryden. All rights reserved.
 //
 
-#import "ETButton.h"
+#import "RITLButton.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 /// 自定义的UITabBarItem
-@interface ETTabBarItem : ETButton
+@interface RITLTabBarItem : RITLButton
 
 /// 保证图片的带下，默认为(23,23) //保证最小的
 @property (nonatomic, assign)CGSize imageSize;
