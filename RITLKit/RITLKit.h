@@ -10,7 +10,6 @@
 #define RITLKit_h
 
 
-#import "RITLCategory.h"
 #import "RITLEXTkeyConfig.h"
 
 //Web
