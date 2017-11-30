@@ -1,13 +1,14 @@
 //
-//  RITLExtension.h
+//  RITLUnility.h
 //  RITLKitDemo
 //
 //  Created by YueWen on 2017/11/30.
 //  Copyright © 2017年 YueWen. All rights reserved.
 //
 
-#ifndef RITLExtension_h
-#define RITLExtension_h
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 
 #define RITL_SCREEN_WIDTH_SCALE ([UIScreen mainScreen].bounds.size.width/320.0f)
@@ -77,5 +78,8 @@ static NSString *const RITLFontPingFangSC_Bold = @"PingFangSC-Bold";
 
 
 
+@interface RITLUnility : NSObject
 
-#endif /* RITLExtension_h */
+@end
+
+NS_ASSUME_NONNULL_END

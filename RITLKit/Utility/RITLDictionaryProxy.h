@@ -10,6 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol RITLEnity
+
+/// 读出真正的数据data
+@property (nonatomic, copy, nullable, readonly) NSDictionary *proxy_real_enity;
+
+@end
+
+
 
 /// 进行model化
 extern id RITLEnityCreateWithData(NSDictionary *data);

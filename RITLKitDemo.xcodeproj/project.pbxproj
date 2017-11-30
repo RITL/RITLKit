@@ -29,7 +29,6 @@
 		DB41C8E71FCF94840035AC4A /* UIView+RITLFrameChanged.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C8A41FCF94840035AC4A /* UIView+RITLFrameChanged.m */; };
 		DB41C8E81FCF94840035AC4A /* UIView+RITLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C8A61FCF94840035AC4A /* UIView+RITLExtension.m */; };
 		DB41C8EA1FCF94840035AC4A /* UIViewController+RITLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C8AA1FCF94840035AC4A /* UIViewController+RITLExtension.m */; };
-		DB41C8EB1FCF94840035AC4A /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C8AE1FCF94840035AC4A /* EXTRuntimeExtensions.m */; };
 		DB41C9041FCFCB0E0035AC4A /* RITLScriptMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C8FF1FCFCB0E0035AC4A /* RITLScriptMessageHandler.m */; };
 		DB41C9051FCFCB0E0035AC4A /* RITLWebScriptMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C9011FCFCB0E0035AC4A /* RITLWebScriptMessageHandler.m */; };
 		DB41C9061FCFCB0E0035AC4A /* RITLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C9031FCFCB0E0035AC4A /* RITLWebViewController.m */; };
@@ -41,10 +40,11 @@
 		DB41C9221FCFD1370035AC4A /* RITLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C91D1FCFD1370035AC4A /* RITLButton.m */; };
 		DB41C9231FCFD1370035AC4A /* RITLTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C91F1FCFD1370035AC4A /* RITLTabBarItem.m */; };
 		DB41C9241FCFD1370035AC4A /* RITLTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C9211FCFD1370035AC4A /* RITLTitleButton.m */; };
-		DB41C92F1FCFD2090035AC4A /* RITLArchiverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C9271FCFD2090035AC4A /* RITLArchiverManager.m */; };
-		DB41C9301FCFD2090035AC4A /* RITLDictionaryProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C9291FCFD2090035AC4A /* RITLDictionaryProxy.m */; };
-		DB41C9311FCFD2090035AC4A /* RITLRuntimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C92C1FCFD2090035AC4A /* RITLRuntimeTool.m */; };
-		DB41C9321FCFD2090035AC4A /* RITLTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C92E1FCFD2090035AC4A /* RITLTimer.m */; };
+		DB84298B1FCFEF0B004E85F7 /* RITLArchiverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8429831FCFEF0B004E85F7 /* RITLArchiverManager.m */; };
+		DB84298C1FCFEF0B004E85F7 /* RITLRuntimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8429841FCFEF0B004E85F7 /* RITLRuntimeTool.m */; };
+		DB84298D1FCFEF0B004E85F7 /* RITLDictionaryProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8429851FCFEF0B004E85F7 /* RITLDictionaryProxy.m */; };
+		DB84298E1FCFEF0B004E85F7 /* RITLTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8429861FCFEF0B004E85F7 /* RITLTimer.m */; };
+		DB8429911FCFEF1D004E85F7 /* RITLUnility.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8429901FCFEF1D004E85F7 /* RITLUnility.m */; };
 		E0C844804EF041BE4AADA667 /* libPods-RITLKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C2315AEE5D22FD49407BF5 /* libPods-RITLKitDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -94,12 +94,6 @@
 		DB41C8A61FCF94840035AC4A /* UIView+RITLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RITLExtension.m"; sourceTree = "<group>"; };
 		DB41C8A91FCF94840035AC4A /* UIViewController+RITLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RITLExtension.h"; sourceTree = "<group>"; };
 		DB41C8AA1FCF94840035AC4A /* UIViewController+RITLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RITLExtension.m"; sourceTree = "<group>"; };
-		DB41C8AC1FCF94840035AC4A /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTKeyPathCoding.h; sourceTree = "<group>"; };
-		DB41C8AD1FCF94840035AC4A /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTRuntimeExtensions.h; sourceTree = "<group>"; };
-		DB41C8AE1FCF94840035AC4A /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTRuntimeExtensions.m; sourceTree = "<group>"; };
-		DB41C8AF1FCF94840035AC4A /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
-		DB41C8B01FCF94840035AC4A /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
-		DB41C8B11FCF94840035AC4A /* RITLEXTkeyConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLEXTkeyConfig.h; sourceTree = "<group>"; };
 		DB41C8C61FCF94840035AC4A /* RITLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLKit.h; sourceTree = "<group>"; };
 		DB41C8FE1FCFCB0E0035AC4A /* RITLScriptMessageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLScriptMessageHandler.h; sourceTree = "<group>"; };
 		DB41C8FF1FCFCB0E0035AC4A /* RITLScriptMessageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLScriptMessageHandler.m; sourceTree = "<group>"; };
@@ -117,22 +111,22 @@
 		DB41C9101FCFCE3A0035AC4A /* UIView+LLSegmentBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LLSegmentBar.m"; sourceTree = "<group>"; };
 		DB41C9161FCFCE5A0035AC4A /* RITLScrollPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLScrollPageViewController.h; sourceTree = "<group>"; };
 		DB41C9171FCFCE5A0035AC4A /* RITLScrollPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLScrollPageViewController.m; sourceTree = "<group>"; };
-		DB41C9191FCFCF380035AC4A /* RITLExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RITLExtension.h; sourceTree = "<group>"; };
 		DB41C91C1FCFD1370035AC4A /* RITLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLButton.h; sourceTree = "<group>"; };
 		DB41C91D1FCFD1370035AC4A /* RITLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLButton.m; sourceTree = "<group>"; };
 		DB41C91E1FCFD1370035AC4A /* RITLTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLTabBarItem.h; sourceTree = "<group>"; };
 		DB41C91F1FCFD1370035AC4A /* RITLTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLTabBarItem.m; sourceTree = "<group>"; };
 		DB41C9201FCFD1370035AC4A /* RITLTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLTitleButton.h; sourceTree = "<group>"; };
 		DB41C9211FCFD1370035AC4A /* RITLTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLTitleButton.m; sourceTree = "<group>"; };
-		DB41C9261FCFD2090035AC4A /* RITLArchiverManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLArchiverManager.h; sourceTree = "<group>"; };
-		DB41C9271FCFD2090035AC4A /* RITLArchiverManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLArchiverManager.m; sourceTree = "<group>"; };
-		DB41C9281FCFD2090035AC4A /* RITLDictionaryProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLDictionaryProxy.h; sourceTree = "<group>"; };
-		DB41C9291FCFD2090035AC4A /* RITLDictionaryProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLDictionaryProxy.m; sourceTree = "<group>"; };
-		DB41C92A1FCFD2090035AC4A /* RITLEnity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLEnity.h; sourceTree = "<group>"; };
-		DB41C92B1FCFD2090035AC4A /* RITLRuntimeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLRuntimeTool.h; sourceTree = "<group>"; };
-		DB41C92C1FCFD2090035AC4A /* RITLRuntimeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLRuntimeTool.m; sourceTree = "<group>"; };
-		DB41C92D1FCFD2090035AC4A /* RITLTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLTimer.h; sourceTree = "<group>"; };
-		DB41C92E1FCFD2090035AC4A /* RITLTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLTimer.m; sourceTree = "<group>"; };
+		DB8429831FCFEF0B004E85F7 /* RITLArchiverManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLArchiverManager.m; sourceTree = "<group>"; };
+		DB8429841FCFEF0B004E85F7 /* RITLRuntimeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLRuntimeTool.m; sourceTree = "<group>"; };
+		DB8429851FCFEF0B004E85F7 /* RITLDictionaryProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLDictionaryProxy.m; sourceTree = "<group>"; };
+		DB8429861FCFEF0B004E85F7 /* RITLTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLTimer.m; sourceTree = "<group>"; };
+		DB8429871FCFEF0B004E85F7 /* RITLDictionaryProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLDictionaryProxy.h; sourceTree = "<group>"; };
+		DB8429881FCFEF0B004E85F7 /* RITLRuntimeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLRuntimeTool.h; sourceTree = "<group>"; };
+		DB8429891FCFEF0B004E85F7 /* RITLTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLTimer.h; sourceTree = "<group>"; };
+		DB84298A1FCFEF0B004E85F7 /* RITLArchiverManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLArchiverManager.h; sourceTree = "<group>"; };
+		DB84298F1FCFEF1D004E85F7 /* RITLUnility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RITLUnility.h; sourceTree = "<group>"; };
+		DB8429901FCFEF1D004E85F7 /* RITLUnility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RITLUnility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,12 +197,10 @@
 			isa = PBXGroup;
 			children = (
 				DB41C8C61FCF94840035AC4A /* RITLKit.h */,
-				DB41C9191FCFCF380035AC4A /* RITLExtension.h */,
-				DB41C9251FCFD2090035AC4A /* FunctionTools */,
+				DB8429811FCFEEE4004E85F7 /* Utility */,
 				DB41C91A1FCFD1370035AC4A /* View */,
 				DB41C9151FCFCE5A0035AC4A /* ScrollPageController */,
 				DB41C8871FCF94840035AC4A /* Category */,
-				DB41C8AB1FCF94840035AC4A /* extobjc */,
 				DB41C8FD1FCFCB0E0035AC4A /* Web */,
 			);
 			path = RITLKit;
@@ -251,19 +243,6 @@
 				DB41C8AA1FCF94840035AC4A /* UIViewController+RITLExtension.m */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		DB41C8AB1FCF94840035AC4A /* extobjc */ = {
-			isa = PBXGroup;
-			children = (
-				DB41C8AC1FCF94840035AC4A /* EXTKeyPathCoding.h */,
-				DB41C8AD1FCF94840035AC4A /* EXTRuntimeExtensions.h */,
-				DB41C8AE1FCF94840035AC4A /* EXTRuntimeExtensions.m */,
-				DB41C8AF1FCF94840035AC4A /* EXTScope.h */,
-				DB41C8B01FCF94840035AC4A /* metamacros.h */,
-				DB41C8B11FCF94840035AC4A /* RITLEXTkeyConfig.h */,
-			);
-			path = extobjc;
 			sourceTree = "<group>";
 		};
 		DB41C8FD1FCFCB0E0035AC4A /* Web */ = {
@@ -333,20 +312,21 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
-		DB41C9251FCFD2090035AC4A /* FunctionTools */ = {
+		DB8429811FCFEEE4004E85F7 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				DB41C9261FCFD2090035AC4A /* RITLArchiverManager.h */,
-				DB41C9271FCFD2090035AC4A /* RITLArchiverManager.m */,
-				DB41C9281FCFD2090035AC4A /* RITLDictionaryProxy.h */,
-				DB41C9291FCFD2090035AC4A /* RITLDictionaryProxy.m */,
-				DB41C92A1FCFD2090035AC4A /* RITLEnity.h */,
-				DB41C92B1FCFD2090035AC4A /* RITLRuntimeTool.h */,
-				DB41C92C1FCFD2090035AC4A /* RITLRuntimeTool.m */,
-				DB41C92D1FCFD2090035AC4A /* RITLTimer.h */,
-				DB41C92E1FCFD2090035AC4A /* RITLTimer.m */,
+				DB84298A1FCFEF0B004E85F7 /* RITLArchiverManager.h */,
+				DB8429831FCFEF0B004E85F7 /* RITLArchiverManager.m */,
+				DB8429871FCFEF0B004E85F7 /* RITLDictionaryProxy.h */,
+				DB8429851FCFEF0B004E85F7 /* RITLDictionaryProxy.m */,
+				DB8429881FCFEF0B004E85F7 /* RITLRuntimeTool.h */,
+				DB8429841FCFEF0B004E85F7 /* RITLRuntimeTool.m */,
+				DB8429891FCFEF0B004E85F7 /* RITLTimer.h */,
+				DB8429861FCFEF0B004E85F7 /* RITLTimer.m */,
+				DB84298F1FCFEF1D004E85F7 /* RITLUnility.h */,
+				DB8429901FCFEF1D004E85F7 /* RITLUnility.m */,
 			);
-			path = FunctionTools;
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,28 +456,28 @@
 			files = (
 				DB41C8E01FCF94840035AC4A /* NSString+RITLExtension.m in Sources */,
 				DB41C9041FCFCB0E0035AC4A /* RITLScriptMessageHandler.m in Sources */,
+				DB84298E1FCFEF0B004E85F7 /* RITLTimer.m in Sources */,
 				DB41C8EA1FCF94840035AC4A /* UIViewController+RITLExtension.m in Sources */,
 				DB41C8751FCF93FB0035AC4A /* ViewController.m in Sources */,
 				DB41C8E51FCF94840035AC4A /* UISearchBar+RITLCustomColor.m in Sources */,
-				DB41C9311FCFD2090035AC4A /* RITLRuntimeTool.m in Sources */,
 				DB41C9121FCFCE3A0035AC4A /* LLSegmentBarConfig.m in Sources */,
 				DB41C9241FCFD1370035AC4A /* RITLTitleButton.m in Sources */,
-				DB41C9301FCFD2090035AC4A /* RITLDictionaryProxy.m in Sources */,
 				DB41C9221FCFD1370035AC4A /* RITLButton.m in Sources */,
 				DB41C9051FCFCB0E0035AC4A /* RITLWebScriptMessageHandler.m in Sources */,
+				DB84298C1FCFEF0B004E85F7 /* RITLRuntimeTool.m in Sources */,
 				DB41C8801FCF93FB0035AC4A /* main.m in Sources */,
 				DB41C8DA1FCF94840035AC4A /* CAGradientLayer+RITLGradientLayer.m in Sources */,
 				DB41C8E31FCF94840035AC4A /* UIImage+RITLExtension.m in Sources */,
-				DB41C9321FCFD2090035AC4A /* RITLTimer.m in Sources */,
 				DB41C9141FCFCE3A0035AC4A /* UIView+LLSegmentBar.m in Sources */,
+				DB8429911FCFEF1D004E85F7 /* RITLUnility.m in Sources */,
 				DB41C9181FCFCE5A0035AC4A /* RITLScrollPageViewController.m in Sources */,
 				DB41C8DC1FCF94840035AC4A /* NSDate+RITLExtension.m in Sources */,
 				DB41C8E61FCF94840035AC4A /* UITableView+RITLCellRegister.m in Sources */,
 				DB41C8DE1FCF94840035AC4A /* NSNumber+RITLExtension.m in Sources */,
-				DB41C8EB1FCF94840035AC4A /* EXTRuntimeExtensions.m in Sources */,
 				DB41C9231FCFD1370035AC4A /* RITLTabBarItem.m in Sources */,
 				DB41C8DD1FCF94840035AC4A /* NSDictionary+RITLExtension.m in Sources */,
 				DB41C8E11FCF94840035AC4A /* UIColor+RITLExtension.m in Sources */,
+				DB84298B1FCFEF0B004E85F7 /* RITLArchiverManager.m in Sources */,
 				DB41C9131FCFCE3A0035AC4A /* LLSegmentBarVC.m in Sources */,
 				DB41C9061FCFCB0E0035AC4A /* RITLWebViewController.m in Sources */,
 				DB41C8DF1FCF94840035AC4A /* NSObject+RITLExtension.m in Sources */,
@@ -505,10 +485,10 @@
 				DB41C8DB1FCF94840035AC4A /* NSArray+RITLExtension.m in Sources */,
 				DB41C8E71FCF94840035AC4A /* UIView+RITLFrameChanged.m in Sources */,
 				DB41C8E21FCF94840035AC4A /* UIControl+RITLBlockButton.m in Sources */,
-				DB41C92F1FCFD2090035AC4A /* RITLArchiverManager.m in Sources */,
 				DB41C8E41FCF94840035AC4A /* UINavigationController+RITLExtension.m in Sources */,
 				DB41C8721FCF93FB0035AC4A /* AppDelegate.m in Sources */,
 				DB41C8E81FCF94840035AC4A /* UIView+RITLExtension.m in Sources */,
+				DB84298D1FCFEF0B004E85F7 /* RITLDictionaryProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

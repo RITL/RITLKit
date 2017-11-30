@@ -8,7 +8,6 @@
 
 #import "RITLDictionaryProxy.h"
 #import <Foundation/Foundation.h>
-#import "RITLEnity.h"
 
 
 @interface NSDictionary (TKDictionaryProxy)
