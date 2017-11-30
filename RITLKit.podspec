@@ -3,9 +3,9 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "RITLKit"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "The commonly Used Objective-C RITLKit."
-  s.homepage     = "https://github.com/RITL/RITLKit.git"
+  s.homepage     = "https://github.com/RITL/RITLKit"
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.license      = { :type => "MIT", :file => "LICENSE" }
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
