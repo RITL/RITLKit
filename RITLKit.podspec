@@ -10,11 +10,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"
   s.source       = { :git => "https://github.com/RITL/RITLKit.git", :tag => "#{s.version}" }
   s.source_files  = "RITLKit/*.{h,m}"
-  s.public_header_files = 'RITLKit/*.{h}'
   s.frameworks = "Foundation", "UIKit","WebKit"
   s.requires_arc = true
-  s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" } 
-  s.public_header_files = 'RITLKit/RITLKit.h'
-  s.source_files = 'RITLKit/RITLKit.h' 
   s.dependency "Masonry"
 end
