@@ -101,7 +101,6 @@
 		DB41C8B01FCF94840035AC4A /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		DB41C8B11FCF94840035AC4A /* RITLEXTkeyConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLEXTkeyConfig.h; sourceTree = "<group>"; };
 		DB41C8C61FCF94840035AC4A /* RITLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLKit.h; sourceTree = "<group>"; };
-		DB41C8FC1FCFC92F0035AC4A /* RITLCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RITLCategory.h; sourceTree = "<group>"; };
 		DB41C8FE1FCFCB0E0035AC4A /* RITLScriptMessageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLScriptMessageHandler.h; sourceTree = "<group>"; };
 		DB41C8FF1FCFCB0E0035AC4A /* RITLScriptMessageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLScriptMessageHandler.m; sourceTree = "<group>"; };
 		DB41C9001FCFCB0E0035AC4A /* RITLWebScriptMessageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLWebScriptMessageHandler.h; sourceTree = "<group>"; };
@@ -250,7 +249,6 @@
 				DB41C8A61FCF94840035AC4A /* UIView+RITLExtension.m */,
 				DB41C8A91FCF94840035AC4A /* UIViewController+RITLExtension.h */,
 				DB41C8AA1FCF94840035AC4A /* UIViewController+RITLExtension.m */,
-				DB41C8FC1FCFC92F0035AC4A /* RITLCategory.h */,
 			);
 			path = Category;
 			sourceTree = "<group>";
