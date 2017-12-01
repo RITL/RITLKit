@@ -198,13 +198,15 @@
 
 -(void)dealloc
 {
-    [self.progressView removeFromSuperview];
-    [self.webView.configuration.userContentController removeAllUserScripts];
-    [self.webView removeObserver:self forKeyPath:@"estimatedProgress" context:@"webView_estimatedProgress"];
-    [self.webView removeObserver:self forKeyPath:@"loading" context:@"webView_loading"];
-    [self.webView removeObserver:self forKeyPath:@"canGoBack" context:@"webView_canGoBack"];
-    [self.progressView removeObserver:self forKeyPath:@"hidden"];
-    
+    if (self.viewLoaded) {
+        
+        [self.progressView removeFromSuperview];
+        [self.webView.configuration.userContentController removeAllUserScripts];
+        [self.webView removeObserver:self forKeyPath:@"estimatedProgress" context:@"webView_estimatedProgress"];
+        [self.webView removeObserver:self forKeyPath:@"loading" context:@"webView_loading"];
+        [self.webView removeObserver:self forKeyPath:@"canGoBack" context:@"webView_canGoBack"];
+        [self.progressView removeObserver:self forKeyPath:@"hidden"];
+    }
 }
 
 
