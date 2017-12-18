@@ -44,7 +44,9 @@
 		DB84298C1FCFEF0B004E85F7 /* RITLRuntimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8429841FCFEF0B004E85F7 /* RITLRuntimeTool.m */; };
 		DB84298D1FCFEF0B004E85F7 /* RITLDictionaryProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8429851FCFEF0B004E85F7 /* RITLDictionaryProxy.m */; };
 		DB84298E1FCFEF0B004E85F7 /* RITLTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8429861FCFEF0B004E85F7 /* RITLTimer.m */; };
-		DB8429911FCFEF1D004E85F7 /* RITLUnility.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8429901FCFEF1D004E85F7 /* RITLUnility.m */; };
+		DB8429911FCFEF1D004E85F7 /* RITLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8429901FCFEF1D004E85F7 /* RITLUtility.m */; };
+		DBC73E221FE75D6500031EEE /* RITLSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC73E1F1FE75D6500031EEE /* RITLSearchTextField.m */; };
+		DBC73E231FE75D6500031EEE /* RITLSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC73E211FE75D6500031EEE /* RITLSearchView.m */; };
 		E0C844804EF041BE4AADA667 /* libPods-RITLKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C2315AEE5D22FD49407BF5 /* libPods-RITLKitDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -125,8 +127,12 @@
 		DB8429881FCFEF0B004E85F7 /* RITLRuntimeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLRuntimeTool.h; sourceTree = "<group>"; };
 		DB8429891FCFEF0B004E85F7 /* RITLTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLTimer.h; sourceTree = "<group>"; };
 		DB84298A1FCFEF0B004E85F7 /* RITLArchiverManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLArchiverManager.h; sourceTree = "<group>"; };
-		DB84298F1FCFEF1D004E85F7 /* RITLUnility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RITLUnility.h; sourceTree = "<group>"; };
-		DB8429901FCFEF1D004E85F7 /* RITLUnility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RITLUnility.m; sourceTree = "<group>"; };
+		DB84298F1FCFEF1D004E85F7 /* RITLUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RITLUtility.h; sourceTree = "<group>"; };
+		DB8429901FCFEF1D004E85F7 /* RITLUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RITLUtility.m; sourceTree = "<group>"; };
+		DBC73E1E1FE75D6500031EEE /* RITLSearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLSearchTextField.h; sourceTree = "<group>"; };
+		DBC73E1F1FE75D6500031EEE /* RITLSearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLSearchTextField.m; sourceTree = "<group>"; };
+		DBC73E201FE75D6500031EEE /* RITLSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLSearchView.h; sourceTree = "<group>"; };
+		DBC73E211FE75D6500031EEE /* RITLSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLSearchView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +300,7 @@
 		DB41C91A1FCFD1370035AC4A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DBC73E1D1FE75D6500031EEE /* SearchBar */,
 				DB41C91B1FCFD1370035AC4A /* Button */,
 			);
 			path = View;
@@ -323,10 +330,21 @@
 				DB8429841FCFEF0B004E85F7 /* RITLRuntimeTool.m */,
 				DB8429891FCFEF0B004E85F7 /* RITLTimer.h */,
 				DB8429861FCFEF0B004E85F7 /* RITLTimer.m */,
-				DB84298F1FCFEF1D004E85F7 /* RITLUnility.h */,
-				DB8429901FCFEF1D004E85F7 /* RITLUnility.m */,
+				DB84298F1FCFEF1D004E85F7 /* RITLUtility.h */,
+				DB8429901FCFEF1D004E85F7 /* RITLUtility.m */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		DBC73E1D1FE75D6500031EEE /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				DBC73E1E1FE75D6500031EEE /* RITLSearchTextField.h */,
+				DBC73E1F1FE75D6500031EEE /* RITLSearchTextField.m */,
+				DBC73E201FE75D6500031EEE /* RITLSearchView.h */,
+				DBC73E211FE75D6500031EEE /* RITLSearchView.m */,
+			);
+			path = SearchBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -459,6 +477,7 @@
 				DB84298E1FCFEF0B004E85F7 /* RITLTimer.m in Sources */,
 				DB41C8EA1FCF94840035AC4A /* UIViewController+RITLExtension.m in Sources */,
 				DB41C8751FCF93FB0035AC4A /* ViewController.m in Sources */,
+				DBC73E231FE75D6500031EEE /* RITLSearchView.m in Sources */,
 				DB41C8E51FCF94840035AC4A /* UISearchBar+RITLCustomColor.m in Sources */,
 				DB41C9121FCFCE3A0035AC4A /* LLSegmentBarConfig.m in Sources */,
 				DB41C9241FCFD1370035AC4A /* RITLTitleButton.m in Sources */,
@@ -468,8 +487,9 @@
 				DB41C8801FCF93FB0035AC4A /* main.m in Sources */,
 				DB41C8DA1FCF94840035AC4A /* CAGradientLayer+RITLGradientLayer.m in Sources */,
 				DB41C8E31FCF94840035AC4A /* UIImage+RITLExtension.m in Sources */,
+				DBC73E221FE75D6500031EEE /* RITLSearchTextField.m in Sources */,
 				DB41C9141FCFCE3A0035AC4A /* UIView+LLSegmentBar.m in Sources */,
-				DB8429911FCFEF1D004E85F7 /* RITLUnility.m in Sources */,
+				DB8429911FCFEF1D004E85F7 /* RITLUtility.m in Sources */,
 				DB41C9181FCFCE5A0035AC4A /* RITLScrollPageViewController.m in Sources */,
 				DB41C8DC1FCF94840035AC4A /* NSDate+RITLExtension.m in Sources */,
 				DB41C8E61FCF94840035AC4A /* UITableView+RITLCellRegister.m in Sources */,

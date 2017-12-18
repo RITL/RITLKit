@@ -9,7 +9,7 @@
 #import "RITLScrollPageViewController.h"
 #import "UIView+RITLFrameChanged.h"
 #import "NSArray+RITLExtension.h"
-#import "RITLUnility.h"
+#import "RITLUtility.h"
 
 @interface RITLScrollPageViewController ()<UIGestureRecognizerDelegate>
 

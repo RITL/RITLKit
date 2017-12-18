@@ -11,13 +11,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// 控制ritl_GradientLayer的第一个色值
 #define RITLCAGradientLayerBeginColor ([UIColor.blackColor colorWithAlphaComponent:0])
+/// 控制ritl_GradientLayer的第二个色值
 #define RITLCAGradientLayerEndColor   ([UIColor.blackColor colorWithAlphaComponent:0.8])
 
-/// Eatta 渐变色
+/// 渐变色
 @interface CAGradientLayer (RITLGradientLayer)
 
-/// Eatta 渐变色
+/// 默认渐变色
 + (instancetype)ritl_GradientLayer:(CGRect)bounds;
 
 ///通用渐变色设置

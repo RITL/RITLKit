@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
+#define RITLEXTERN extern
 
 #define RITL_SCREEN_WIDTH_SCALE ([UIScreen mainScreen].bounds.size.width/320.0f)
 #define RITL_SCREEN_HEIGHT_SCALE ([UIScreen mainScreen].bounds.size.height/568.0f)
@@ -77,9 +79,64 @@ static NSString *const RITLFontPingFangSC_Medium = @"PingFangSC-Medium";
 static NSString *const RITLFontPingFangSC_Bold = @"PingFangSC-Bold";
 
 
+/**
+ 检测字符串属性是否符合上传标准,放置字符串因为空格占位而出现空白
+ 
+ @param property 字符串
+ @return true表示符合上传要求，false表示不符合上传要求
+ */
+static inline BOOL ritl_checkStringProperty(NSString * property)
+{
+    if (!property || [property isEqualToString:@""]) {  return false; }
+    
+    NSMutableString * propertyHandler = [property mutableCopy];
+    
+    //去掉所有的空格
+    [propertyHandler replaceOccurrencesOfString:@" " withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [propertyHandler length])];
+    
+    //不为nil并且不为空格
+    return ![propertyHandler isEqualToString:@""];
+}
 
-@interface RITLUnility : NSObject
+
+#define RITLStandard (1024.0)
+
+static inline NSString * ritl_sizeWithLength(NSUInteger length)
+{
+    //转换成Btye
+    NSUInteger btye = length;
+    
+    //如果达到MB
+    if (btye > RITLStandard * RITLStandard){
+        return [NSString stringWithFormat:@"%.1fMB",btye / RITLStandard / RITLStandard];
+    }
+    
+    else if (btye > RITLStandard){
+        return [NSString stringWithFormat:@"%.0fKB",btye / RITLStandard];
+    }
+    
+    else{
+        return [NSString stringWithFormat:@"%@B",@(btye)];
+    }
+}
+
+
+@interface RITLUtility : NSObject
+
+//检测是否是手机号码
++ (BOOL)isStringMobileNumber:(NSString *)mobileNum;
+
+//检测字符串是否是数字或字母组成
++ (BOOL)isStringNumberOrLetter:(NSString *)num;
+
+//检测字符串是否是纯数字
++ (BOOL)isStringAllNumber:(NSString *)num;
+
+/// 使用字体进行检测，放置出现nil
++ (UIFont *)checkWhetherExistFontWithName:(NSString *)fontName AndSize:(CGFloat)size;
 
 @end
+
+RITLEXTERN UIFont *RITLUtilityFont(NSString *fontName,CGFloat size);
 
 NS_ASSUME_NONNULL_END

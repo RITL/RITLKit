@@ -8,7 +8,7 @@
 
 #import "RITLTabBarItem.h"
 #import "UIView+RITLFrameChanged.h"
-#import "RITLUnility.h"
+#import "RITLUtility.h"
 #import <Masonry/Masonry.h>
 
 @interface RITLTabBarItem ()

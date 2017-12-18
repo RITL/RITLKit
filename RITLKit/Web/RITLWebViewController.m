@@ -9,14 +9,15 @@
 #import "RITLWebViewController.h"
 #import "RITLScriptMessageHandler.h"
 #import "UIView+RITLFrameChanged.h"
-#import "RITLUnility.h"
+#import "RITLUtility.h"
 #import "RITLWebScriptMessageHandler.h"
 #import <Masonry.h>
 #import <objc/runtime.h>
 
 @import WebKit;
 
-@interface RITLWebViewController ()
+@interface RITLWebViewController ()<WKScriptMessageHandler>
+
 @property (nonatomic, strong, readwrite) WKWebView *webView;
 
 @end
@@ -102,6 +103,15 @@
         for (id <WKScriptMessageHandler,RITLScriptMessageHandler> handler in self.scriptMessageHandlers) {
             
             [self.webView.configuration.userContentController addScriptMessageHandler:[RITLScriptMessageHandler scriptWithDelegate:handler] name:handler.name];
+        }
+    }
+    
+    //进行name注册
+    if (self.messageHanderNames) {
+        
+        for (NSString *name in self.messageHanderNames) {
+            
+            [self.webView.configuration.userContentController addScriptMessageHandler:[RITLScriptMessageHandler scriptWithDelegate:self] name:name];
         }
     }
     
@@ -419,6 +429,15 @@
     }
     
     decisionHandler(WKNavigationActionPolicyAllow);
+}
+
+
+
+
+#pragma mark - WKScriptMessageHandler
+- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message
+{
+    
 }
 
 @end

@@ -56,6 +56,9 @@ typedef void(^RITLWebControllerConfigHandler)(RITLWebViewController *viewControl
 /// 进度条视图
 @property (nonatomic, strong) UIProgressView *progressView;
 
+/// 控制器当做自己的WKScriptMessageHandler进行注册的names - 默认为nil
+@property (nonatomic, copy, readonly, nullable)NSArray < NSString *> *messageHanderNames;
+
 
 /**
  便利构造器
@@ -64,7 +67,6 @@ typedef void(^RITLWebControllerConfigHandler)(RITLWebViewController *viewControl
  @return TKWebViewController对象
  */
 + (instancetype)ritl_WebControllerHandler:(RITLWebControllerConfigHandler)configHandler;
-
 
 
 /// 是否在初始化时自动加载url信息，默认为true

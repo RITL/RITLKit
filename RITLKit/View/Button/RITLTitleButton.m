@@ -7,7 +7,7 @@
 //
 
 #import "RITLTitleButton.h"
-#import "RITLUnility.h"
+#import "RITLUtility.h"
 #import <Masonry/Masonry.h>
 
 @implementation RITLTitleButton

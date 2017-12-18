@@ -5,6 +5,8 @@
 //  Created by liushaohua on 2017/6/3.
 //  Copyright © 2017年 416997919@qq.com. All rights reserved.
 //
+//  对原有的类进行的扩充
+//  源码地址:https://github.com/liuniuliuniu/LLSegmentBar
 
 #import <UIKit/UIKit.h>
 #import "LLSegmentBarConfig.h"
@@ -45,6 +47,9 @@ extern CGFloat LLSegmentBarButtonsMarginDefault;
 @property (nonatomic,assign) NSInteger selectIndex;
 
 - (void)updateWithConfig:(void(^)(LLSegmentBarConfig *config))configBlock;
+
+
+#pragma mark - 对LLSegmentBar进行的扩充
 
 
 /// 仅仅改变UI,不执行回调

@@ -82,6 +82,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (UIImage)
 
+/// 通过字符串名称直接声明 [UIImage imageNamed:self]
 @property (nonatomic, copy, readonly, nullable) UIImage *ritl_image;
 
 @end
