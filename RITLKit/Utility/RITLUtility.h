@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define RITL_SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
 
-#define RITL_iPhoneX ((SCREEN_WIDTH == 375) && (SCREEN_HEIGHT == 812))
+#define RITL_iPhoneX ((RITL_SCREEN_WIDTH == 375) && (RITL_SCREEN_HEIGHT == 812))
 
 #define RITL_NormalNavigationBarHeight (64)
 #define RITL_iPhoneXNavigationBarHeight (88)

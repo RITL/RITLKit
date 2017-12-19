@@ -37,20 +37,6 @@
     // 设置代理
     self.delegate = self.delegate ? self.delegate : self;
     self.dataSource = self.dataSource ? self.dataSource : self;
-    
-    
-    //初始化手势
-    self.ritl_panGestureRecognizer = [UIPanGestureRecognizer new];
-    self.ritl_panGestureRecognizer.delegate = self;
-    [self.view addGestureRecognizer:self.ritl_panGestureRecognizer];
-    
-    __weak typeof(self) weakSelf = self;
-    
-    [self.ritl_gestureRecongnizers enumerateObjectsUsingBlock:^(UIGestureRecognizer * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-       
-        [weakSelf.ritl_panGestureRecognizer requireGestureRecognizerToFail:obj];
-    }];
-    
 }
 
 
@@ -115,17 +101,13 @@
 -(void)setCurrentViewController:(UIViewController *)currentViewController
 {
     if (!currentViewController) {
-        
         return;
     }
     
-
     //如果控制器一样，不作操作
     if ([currentViewController isEqual:self.currentViewController]) {
-        
         return;
     }
-    
     
     //获得当前的控制器
     UIViewController *lastCurrentViewController = self.currentViewController;
@@ -164,6 +146,8 @@
 
 @interface RITLScrollHorizontalPageViewController ()
 
+/// 标志动画是否完成
+@property (nonatomic, assign)BOOL translateFinish;
 
 @end
 
@@ -188,8 +172,30 @@
          [self.view addSubview:self.segmentBar];
     }
     
-   
-    [self.ritl_panGestureRecognizer addTarget:self action:@selector(doSomething:)];
+    
+    //初始化手势
+    self.ritl_panGestureRecognizer = [UIPanGestureRecognizer new];
+    self.ritl_panGestureRecognizer.delegate = self;
+    
+    //获得需要失败的手势
+    if (!self.popPanGestureRecognizer && self.navigationController) {
+        
+        self.popPanGestureRecognizer = self.navigationController.interactivePopGestureRecognizer;
+    }
+    
+    else if (self.popPanGestureRecognizer  && self.parentViewController.navigationController) {
+        
+        self.popPanGestureRecognizer = self.parentViewController.navigationController.interactivePopGestureRecognizer;
+    }
+    
+    if (self.popPanGestureRecognizer) {
+        
+         [self.ritl_panGestureRecognizer requireGestureRecognizerToFail:self.popPanGestureRecognizer];//自定义的高于导航栏
+    }
+    
+    [self.ritl_scrollView.panGestureRecognizer requireGestureRecognizerToFail:self.ritl_panGestureRecognizer];//滚动视图的手势高于pageController
+    
+    [self.ritl_scrollView addGestureRecognizer:self.ritl_panGestureRecognizer];
 }
 
 
@@ -199,9 +205,9 @@
 }
 
 
-- (void)viewDidLayoutSubviews
+- (void)viewWillLayoutSubviews
 {
-    [super viewDidLayoutSubviews];
+    [super viewWillLayoutSubviews];
     
     self.segmentBar.ritl_width = self.ritl_width;
     
@@ -233,27 +239,21 @@
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
 {
-    if (self.currentIndex != 0) {
+    UIPanGestureRecognizer *recognizer = (UIPanGestureRecognizer *)gestureRecognizer;
+    
+    CGPoint translate = [recognizer translationInView:gestureRecognizer.view];
+
+//    NSLog(@"translate = %@",NSStringFromCGPoint(translate));
+    
+    if (translate.x <= 0) {//到达最右侧
         
-        return false;
+        return self.currentIndex == self.contentViewControllers.count - 1 && self.translateFinish;
+        
     }
     
-    return true;
+    return self.currentIndex == 0 && self.translateFinish;
 }
 
-
-
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
-{
-    //如果偏移量小于视图宽度
-    if (self.currentIndex == 0 && [otherGestureRecognizer isEqual:self.popPanGestureRecognizer]) {
-        
-        NSLog(@"shouldRecognizeSimultaneouslyWithGestureRecognizer");
-        return true;
-    }
-    
-    return false;
-}
 
 
 #pragma mark - setter
@@ -321,10 +321,18 @@
 
 #pragma mark - UIPageViewControllerDelegate
 
+- (void)pageViewController:(UIPageViewController *)pageViewController willTransitionToViewControllers:(NSArray<UIViewController *> *)pendingViewControllers
+{
+    self.translateFinish = false;
+}
+
+
 - (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray<UIViewController *> *)previousViewControllers transitionCompleted:(BOOL)completed
 {
     
     [super pageViewController:pageViewController didFinishAnimating:finished previousViewControllers:previousViewControllers transitionCompleted:completed];
+
+    self.translateFinish = true;
     
     if (self.ritl_delegate && [self.ritl_delegate respondsToSelector:@selector(ritl_scrollHorizontalPageViewController:willToIndex:)]) {
         

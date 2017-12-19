@@ -10,6 +10,12 @@
 #define RITLKit_h
 
 
+#import "RITLUtility.h"
+#import "RITLSearchView.h"
+#import "RITLSearchTextField.h"
+#import "RITLScrollPageViewController.h"
+
+
 #import "UIView+RITLExtension.h" 
 #import "NSDate+RITLExtension.h"
 #import "NSArray+RITLExtension.h"

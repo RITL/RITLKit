@@ -7,8 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "RITLKit.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) UIImageView *animatedImageView;
+@property (nonatomic, strong) UILabel *titleLabel;
 
 @end
 
@@ -17,6 +21,58 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    UIViewController *viewController = [UIStoryboard storyboardWithName:@"Main" bundle:NSBundle.mainBundle].instantiateInitialViewController;
+    
+    self.window = [[UIWindow alloc]initWithFrame:UIScreen.mainScreen.bounds];
+    self.window.rootViewController = viewController;
+    [self.window makeKeyAndVisible];
+    
+    
+    //初始化
+    self.animatedImageView = ({
+        
+        UIImageView *imageView = [UIImageView new];
+        imageView.contentMode = UIViewContentModeScaleAspectFill;
+        imageView.image = [(RITL_iPhoneX ? @"ritl_iphonex" : @"ritl_iphone") ritl_image];
+        
+        
+        imageView;
+    });
+    
+    
+    self.titleLabel = ({
+        
+        UILabel *label = [UILabel new];
+        label.backgroundColor = [UIColor blackColor];
+        label.text = @"小黑丹";
+//        label.
+        label.textColor = UIColor.whiteColor;
+        
+        label;
+    });
+    
+    
+    [self.animatedImageView addSubview:self.titleLabel];
+    self.animatedImageView.frame = UIScreen.mainScreen.bounds;
+    self.titleLabel.frame = CGRectMake(0, 0, 200, 100);
+    self.titleLabel.center = CGPointMake(self.animatedImageView.ritl_width / 2.0, 300);
+    
+//    [self.window addSubview:self.animatedImageView];
+//    [self.window bringSubviewToFront:self.animatedImageView];
+//    
+    
+//    [UIView animateWithDuration:3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+//        ;
+//    } completion:^(BOOL finished) {
+//
+//
+////        [self.animatedImageView removeFromSuperview];
+//    }];
+
+    
+    
     return YES;
 }
 

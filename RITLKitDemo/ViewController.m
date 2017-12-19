@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "RITLScrollPageViewController.h"
 
 @interface ViewController ()
 

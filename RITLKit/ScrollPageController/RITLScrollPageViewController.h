@@ -58,8 +58,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 控制器
 @property (nonatomic, strong) LLSegmentBar * segmentBar;
 
-/// 导航栏的pop手势
-@property (nonatomic, weak)UIPanGestureRecognizer *popPanGestureRecognizer;
+/// 导航栏的pop手势,默认为navigationController.interactivePopGestureRecognizer
+@property (nonatomic, weak)UIGestureRecognizer *popPanGestureRecognizer;
 
 @end
 

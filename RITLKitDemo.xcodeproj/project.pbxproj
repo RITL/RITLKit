@@ -11,7 +11,6 @@
 		DB41C8751FCF93FB0035AC4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C8741FCF93FB0035AC4A /* ViewController.m */; };
 		DB41C8781FCF93FB0035AC4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB41C8761FCF93FB0035AC4A /* Main.storyboard */; };
 		DB41C87A1FCF93FB0035AC4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB41C8791FCF93FB0035AC4A /* Assets.xcassets */; };
-		DB41C87D1FCF93FB0035AC4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB41C87B1FCF93FB0035AC4A /* LaunchScreen.storyboard */; };
 		DB41C8801FCF93FB0035AC4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C87F1FCF93FB0035AC4A /* main.m */; };
 		DB41C8DA1FCF94840035AC4A /* CAGradientLayer+RITLGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C8891FCF94840035AC4A /* CAGradientLayer+RITLGradientLayer.m */; };
 		DB41C8DB1FCF94840035AC4A /* NSArray+RITLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C88C1FCF94840035AC4A /* NSArray+RITLExtension.m */; };
@@ -47,6 +46,10 @@
 		DB8429911FCFEF1D004E85F7 /* RITLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8429901FCFEF1D004E85F7 /* RITLUtility.m */; };
 		DBC73E221FE75D6500031EEE /* RITLSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC73E1F1FE75D6500031EEE /* RITLSearchTextField.m */; };
 		DBC73E231FE75D6500031EEE /* RITLSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC73E211FE75D6500031EEE /* RITLSearchView.m */; };
+		DBC73E261FE76A1700031EEE /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC73E251FE76A1700031EEE /* TableViewController.m */; };
+		DBC73E2C1FE79CD100031EEE /* RITLScrollPageViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC73E2B1FE79CD100031EEE /* RITLScrollPageViewTestController.m */; };
+		DBC73E2F1FE7A0EA00031EEE /* ritl_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC73E2D1FE7A0E900031EEE /* ritl_iphone.png */; };
+		DBC73E301FE7A0EA00031EEE /* ritl_iphonex.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC73E2E1FE7A0EA00031EEE /* ritl_iphonex.png */; };
 		E0C844804EF041BE4AADA667 /* libPods-RITLKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C2315AEE5D22FD49407BF5 /* libPods-RITLKitDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +64,6 @@
 		DB41C8741FCF93FB0035AC4A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DB41C8771FCF93FB0035AC4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB41C8791FCF93FB0035AC4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DB41C87C1FCF93FB0035AC4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB41C87E1FCF93FB0035AC4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB41C87F1FCF93FB0035AC4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DB41C8881FCF94840035AC4A /* CAGradientLayer+RITLGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAGradientLayer+RITLGradientLayer.h"; sourceTree = "<group>"; };
@@ -133,6 +135,12 @@
 		DBC73E1F1FE75D6500031EEE /* RITLSearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLSearchTextField.m; sourceTree = "<group>"; };
 		DBC73E201FE75D6500031EEE /* RITLSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLSearchView.h; sourceTree = "<group>"; };
 		DBC73E211FE75D6500031EEE /* RITLSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLSearchView.m; sourceTree = "<group>"; };
+		DBC73E241FE76A1700031EEE /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		DBC73E251FE76A1700031EEE /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		DBC73E2A1FE79CD100031EEE /* RITLScrollPageViewTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RITLScrollPageViewTestController.h; sourceTree = "<group>"; };
+		DBC73E2B1FE79CD100031EEE /* RITLScrollPageViewTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RITLScrollPageViewTestController.m; sourceTree = "<group>"; };
+		DBC73E2D1FE7A0E900031EEE /* ritl_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ritl_iphone.png; sourceTree = "<group>"; };
+		DBC73E2E1FE7A0EA00031EEE /* ritl_iphonex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ritl_iphonex.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,15 +194,20 @@
 		DB41C86F1FCF93FB0035AC4A /* RITLKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DBC73E2E1FE7A0EA00031EEE /* ritl_iphonex.png */,
+				DBC73E2D1FE7A0E900031EEE /* ritl_iphone.png */,
 				DB41C8701FCF93FB0035AC4A /* AppDelegate.h */,
 				DB41C8711FCF93FB0035AC4A /* AppDelegate.m */,
 				DB41C8731FCF93FB0035AC4A /* ViewController.h */,
 				DB41C8741FCF93FB0035AC4A /* ViewController.m */,
 				DB41C8761FCF93FB0035AC4A /* Main.storyboard */,
 				DB41C8791FCF93FB0035AC4A /* Assets.xcassets */,
-				DB41C87B1FCF93FB0035AC4A /* LaunchScreen.storyboard */,
 				DB41C87E1FCF93FB0035AC4A /* Info.plist */,
 				DB41C87F1FCF93FB0035AC4A /* main.m */,
+				DBC73E241FE76A1700031EEE /* TableViewController.h */,
+				DBC73E251FE76A1700031EEE /* TableViewController.m */,
+				DBC73E2A1FE79CD100031EEE /* RITLScrollPageViewTestController.h */,
+				DBC73E2B1FE79CD100031EEE /* RITLScrollPageViewTestController.m */,
 			);
 			path = RITLKitDemo;
 			sourceTree = "<group>";
@@ -408,8 +421,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB41C87D1FCF93FB0035AC4A /* LaunchScreen.storyboard in Resources */,
+				DBC73E2F1FE7A0EA00031EEE /* ritl_iphone.png in Resources */,
 				DB41C87A1FCF93FB0035AC4A /* Assets.xcassets in Resources */,
+				DBC73E301FE7A0EA00031EEE /* ritl_iphonex.png in Resources */,
 				DB41C8781FCF93FB0035AC4A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,8 +521,10 @@
 				DB41C8E21FCF94840035AC4A /* UIControl+RITLBlockButton.m in Sources */,
 				DB41C8E41FCF94840035AC4A /* UINavigationController+RITLExtension.m in Sources */,
 				DB41C8721FCF93FB0035AC4A /* AppDelegate.m in Sources */,
+				DBC73E261FE76A1700031EEE /* TableViewController.m in Sources */,
 				DB41C8E81FCF94840035AC4A /* UIView+RITLExtension.m in Sources */,
 				DB84298D1FCFEF0B004E85F7 /* RITLDictionaryProxy.m in Sources */,
+				DBC73E2C1FE79CD100031EEE /* RITLScrollPageViewTestController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,14 +537,6 @@
 				DB41C8771FCF93FB0035AC4A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DB41C87B1FCF93FB0035AC4A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB41C87C1FCF93FB0035AC4A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -643,13 +651,15 @@
 			baseConfigurationReference = 374934276214B3CCCC53D9B4 /* Pods-RITLKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8S4NWFZC5J;
 				INFOPLIST_FILE = RITLKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yue.RITLKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -658,13 +668,15 @@
 			baseConfigurationReference = BD51B089C949D25D17060DE0 /* Pods-RITLKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8S4NWFZC5J;
 				INFOPLIST_FILE = RITLKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yue.RITLKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
