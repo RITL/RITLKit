@@ -8,7 +8,7 @@
 
 #import "UIControl+RITLBlockButton.h"
 #import <objc/runtime.h>
-#import <Masonry.h>
+#import <Masonry/Masonry.h>
 
 @implementation UIControl (RITLBlockButton)
 
