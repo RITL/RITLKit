@@ -21,15 +21,6 @@
 }
 
 
-
-//-(UIStatusBarStyle)preferredStatusBarStyle
-//{
-//    //    NSLog(@"I am %@",NSStringFromClass([self class]));
-//    
-//    return UIStatusBarStyleLightContent;
-//}
-
-
 @end
 
 

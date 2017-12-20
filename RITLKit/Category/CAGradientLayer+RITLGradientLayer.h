@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define RITLCAGradientLayerEndColor   ([UIColor.blackColor colorWithAlphaComponent:0.8])
 
 /// 渐变色
-@interface CAGradientLayer (RITLGradientLayer)
+@interface CAGradientLayer (RITL)
 
 /// 默认渐变色
 + (instancetype)ritl_GradientLayer:(CGRect)bounds;

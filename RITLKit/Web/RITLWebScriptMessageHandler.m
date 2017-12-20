@@ -28,14 +28,9 @@
 //    NSDictionary *body = message.body;
     
 //    NSLog(@"JS call back = %@",body);
-    
-//    [TKPageManager pageManagerFromObject:message.webView info:body];
+
 }
 
 
-- (void)dealloc
-{
-    NSLog(@"%@ dealloc",NSStringFromClass([self class]));
-}
 
 @end
