@@ -9,8 +9,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.ios.deployment_target = "8.0"
   s.source       = { :git => "https://github.com/RITL/RITLKit.git", :tag => s.version }
-  s.source_files = "RITLKit","RITLKit/**/*.{h,m}"
-  s.frameworks   = "Foundation", "UIKit", "WebKit"
+  s.source_files = 'RITLKit/**/*.{h,m}'
+  s.frameworks   = 'Foundation', 'UIKit', 'WebKit'
   s.requires_arc = true
-  s.dependency "Masonry"
+  s.dependency 'Masonry'
 end
