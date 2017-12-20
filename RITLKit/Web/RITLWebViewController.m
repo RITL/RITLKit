@@ -10,9 +10,14 @@
 #import "RITLScriptMessageHandler.h"
 #import "UIView+RITLFrameChanged.h"
 #import "RITLUtility.h"
-#import "Masonry.h"
 #import "RITLWebScriptMessageHandler.h"
 #import <objc/runtime.h>
+
+#if __has_include(<Masonry/Masonry.h>)
+#import <Masonry/Masonry.h>
+#else
+#import "Masonry.h"
+#endif
 
 
 @import WebKit;
