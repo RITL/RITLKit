@@ -136,12 +136,12 @@
     }];
     
     [control mas_makeConstraints:^(MASConstraintMaker *make) {
-       
+
         make.left.top.right.and.bottom.offset(0);
-        
+
     }];
-    
-    
+
+
     return control;
 }
 

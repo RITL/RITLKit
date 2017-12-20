@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-/// 自定义的搜索视图
+/// 自定义的搜索视图 - 本质为textField,为模拟
 @interface RITLSearchView : UIView
 
 /// 代理对象
