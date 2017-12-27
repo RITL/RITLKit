@@ -28,18 +28,22 @@ Pod::Spec.new do |s|
 
   s.subspec 'ScrollPageController' do |ss|
     ss.source_files = 'RITLKit/ScrollPageController/**/*.{h,m}'
+    ss.dependency = 'RITLKit/Category'
   end
 
   s.subspec 'Utility' do |ss|
     ss.source_files = 'RITLKit/Utility/**/*.{h,m}'
+    ss.dependency = 'RITLKit/Category'
   end
 
   s.subspec 'View' do |ss|
     ss.source_files = 'RITLKit/View/**/*.{h,m}'
+    ss.dependency = 'RITLKit/Category'
   end
 
   s.subspec 'Web' do |ss|
     ss.source_files = 'RITLKit/Web/**/*.{h,m}'
+    ss.dependency = 'RITLKit/Category'
   end
 
 end
