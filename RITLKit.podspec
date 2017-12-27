@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
 
   s.source       = { :git => "https://github.com/RITL/RITLKit.git", :tag => s.version }
-  s.source_files = "RITLKit/**/*.{h,m}"
+  s.source_files = "RITLKit/RITLKit.h"
 
   s.frameworks   = 'Foundation', 'UIKit', 'WebKit'
   s.requires_arc = true
@@ -22,26 +22,24 @@ Pod::Spec.new do |s|
   s.dependency 'Masonry'
 
 
-    s.subspec 'Category' do |ss|
-    ss.source_files = 'RITLKit/Category/*.{h,m}'
+  s.subspec 'Category' do |ss|
+    ss.source_files = 'RITLKit/Category/**/*.{h,m}'
   end
 
-
-    s.subspec 'ScrollPageController' do |ss|
-    ss.source_files = 'RITLKit/ScrollPageController/*.{h,m}'
-
+  s.subspec 'ScrollPageController' do |ss|
+    ss.source_files = 'RITLKit/ScrollPageController/**/*.{h,m}'
   end
 
   s.subspec 'Utility' do |ss|
-    ss.source_files = 'RITLKit/Utility/*.{h,m}'
+    ss.source_files = 'RITLKit/Utility/**/*.{h,m}'
   end
 
   s.subspec 'View' do |ss|
-    ss.source_files = 'RITLKit/View/*.{h,m}'
+    ss.source_files = 'RITLKit/View/**/*.{h,m}'
   end
 
   s.subspec 'Web' do |ss|
-    ss.source_files = 'RITLKit/Web/*.{h,m}'
+    ss.source_files = 'RITLKit/Web/**/*.{h,m}'
   end
 
 end
