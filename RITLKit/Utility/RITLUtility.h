@@ -25,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define RITL_iPhoneXNavigationBarHeight (88)
 #define RITL_iPhoneXNavigationBarSafeDistance (88 - 44)
 #define RITL_iPhoneXNavigationBarDistance (RITL_iPhoneX ? RITL_iPhoneXNavigationBarSafeDistance : 0)
+#define RITL_DefaultNaviBarHeight (RITL_iPhoneX ? RITL_iPhoneXNavigationBarHeight : RITL_NormalNavigationBarHeight)
 
 #define RITL_NormalTabBarHeight (49)
 #define RITL_iPhoneXTabBarHeight (83)
@@ -119,6 +120,10 @@ static inline NSString * ritl_sizeWithLength(NSUInteger length)
         return [NSString stringWithFormat:@"%@B",@(btye)];
     }
 }
+
+
+/// 打电话
+extern void RITLCall(NSString *telephoneNumber);
 
 
 @interface RITLUtility : NSObject

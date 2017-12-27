@@ -7,6 +7,7 @@
 //
 
 #import "RITLUtility.h"
+#import "NSString+RITLExtension.h"
 
 @implementation RITLUtility
 
@@ -60,6 +61,39 @@
 
 
 @end
+
+void RITLCall(NSString *telephoneNumber)
+{
+    //拨打电话
+    NSMutableString *tel = [[NSMutableString alloc]initWithFormat:@"tel:%@",telephoneNumber];
+    
+    UIApplication *application = [UIApplication sharedApplication];
+    
+    
+    if ([application canOpenURL:tel.ritl_url]) {
+        
+        //#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 100000
+        if ([UIDevice currentDevice].systemVersion.floatValue >= 10.0 && [application respondsToSelector:@selector(openURL:options:completionHandler:)]) {
+            
+            if (@available(iOS 10.0, *)) {
+                [application openURL:tel.ritl_url options:@{UIApplicationOpenURLOptionUniversalLinksOnly:@(false)}completionHandler:^(BOOL success) {}];
+                
+            } else {
+                // Fallback on earlier versions
+            }
+        }else {
+            
+            [application openURL:tel.ritl_url];
+            
+        }
+        
+        //#else
+        
+        
+        //#endif
+    }
+}
+
 
 UIFont *RITLUtilityFont(NSString *fontName,CGFloat size)
 {

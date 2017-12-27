@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSDictionary (RITLExtension)
 
+/// 当前App的版本号
+@property (nonatomic, copy, nullable, readonly) NSString *ritl_version;
+
 @end
 
 

@@ -87,4 +87,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+
+@interface NSString (RITLChecker)
+
+
+/**
+ 是否存在空格或者是否全是空格
+ 检测字符串属性是否符合上传标准,放置字符串因为空格占位而出现空白
+ */
+@property (nonatomic, assign, readonly)BOOL ritl_hasSpaceWord;
+
+
+@end
+
 NS_ASSUME_NONNULL_END

@@ -39,6 +39,7 @@
 		DB41C9221FCFD1370035AC4A /* RITLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C91D1FCFD1370035AC4A /* RITLButton.m */; };
 		DB41C9231FCFD1370035AC4A /* RITLTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C91F1FCFD1370035AC4A /* RITLTabBarItem.m */; };
 		DB41C9241FCFD1370035AC4A /* RITLTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C9211FCFD1370035AC4A /* RITLTitleButton.m */; };
+		DB660C7D1FECF11D00991D1D /* UILabel+RITLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB660C7C1FECF11D00991D1D /* UILabel+RITLExtension.m */; };
 		DB84298B1FCFEF0B004E85F7 /* RITLArchiverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8429831FCFEF0B004E85F7 /* RITLArchiverManager.m */; };
 		DB84298C1FCFEF0B004E85F7 /* RITLRuntimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8429841FCFEF0B004E85F7 /* RITLRuntimeTool.m */; };
 		DB84298D1FCFEF0B004E85F7 /* RITLDictionaryProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8429851FCFEF0B004E85F7 /* RITLDictionaryProxy.m */; };
@@ -121,6 +122,8 @@
 		DB41C91F1FCFD1370035AC4A /* RITLTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLTabBarItem.m; sourceTree = "<group>"; };
 		DB41C9201FCFD1370035AC4A /* RITLTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLTitleButton.h; sourceTree = "<group>"; };
 		DB41C9211FCFD1370035AC4A /* RITLTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLTitleButton.m; sourceTree = "<group>"; };
+		DB660C7B1FECF11D00991D1D /* UILabel+RITLExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+RITLExtension.h"; sourceTree = "<group>"; };
+		DB660C7C1FECF11D00991D1D /* UILabel+RITLExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+RITLExtension.m"; sourceTree = "<group>"; };
 		DB8429831FCFEF0B004E85F7 /* RITLArchiverManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLArchiverManager.m; sourceTree = "<group>"; };
 		DB8429841FCFEF0B004E85F7 /* RITLRuntimeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLRuntimeTool.m; sourceTree = "<group>"; };
 		DB8429851FCFEF0B004E85F7 /* RITLDictionaryProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLDictionaryProxy.m; sourceTree = "<group>"; };
@@ -260,6 +263,8 @@
 				DB41C8A61FCF94840035AC4A /* UIView+RITLExtension.m */,
 				DB41C8A91FCF94840035AC4A /* UIViewController+RITLExtension.h */,
 				DB41C8AA1FCF94840035AC4A /* UIViewController+RITLExtension.m */,
+				DB660C7B1FECF11D00991D1D /* UILabel+RITLExtension.h */,
+				DB660C7C1FECF11D00991D1D /* UILabel+RITLExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -489,6 +494,7 @@
 				DB41C8E01FCF94840035AC4A /* NSString+RITLExtension.m in Sources */,
 				DB41C9041FCFCB0E0035AC4A /* RITLScriptMessageHandler.m in Sources */,
 				DB84298E1FCFEF0B004E85F7 /* RITLTimer.m in Sources */,
+				DB660C7D1FECF11D00991D1D /* UILabel+RITLExtension.m in Sources */,
 				DB41C8EA1FCF94840035AC4A /* UIViewController+RITLExtension.m in Sources */,
 				DB41C8751FCF93FB0035AC4A /* ViewController.m in Sources */,
 				DBC73E231FE75D6500031EEE /* RITLSearchView.m in Sources */,
