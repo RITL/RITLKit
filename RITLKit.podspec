@@ -27,12 +27,12 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'ScrollPageController' do |ss|
-    ss.source_files = 'RITLKit/ScrollPageController/{RITLScrollPageViewController}.{h,m}'
+    ss.source_files = 'RITLKit/ScrollPageController/**/{RITLScrollPageViewController}.{h,m}'
     ss.dependency 'RITLKit/Category'
     ss.dependency 'RITLKit/Utility'
 
     ss.subspec 'LLSegmentBar' do |sss| 
-       ss.source_files = 'RITLKit/ScrollPageController/LLSegmentBar/**/*.{h,m}'
+       sss.source_files = 'RITLKit/ScrollPageController/LLSegmentBar/**/*.{h,m}'
     end
   end
 
