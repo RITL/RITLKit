@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'RITLKit'
-  s.version      = '0.0.3'
+  s.version      = '0.0.4'
   s.summary      = "The commonly Used Objective-C RITLKit."
 
   s.homepage     = "https://github.com/RITL/RITLKit"
@@ -27,9 +27,13 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'ScrollPageController' do |ss|
-    ss.source_files = 'RITLKit/ScrollPageController/**/*.{h,m}'
+    ss.source_files = 'RITLKit/ScrollPageController/{RITLScrollPageViewController}.{h,m}'
     ss.dependency 'RITLKit/Category'
     ss.dependency 'RITLKit/Utility'
+
+    ss.subspec 'LLSegmentBar' do |sss| 
+       ss.source_files = 'RITLKit/ScrollPageController/LLSegmentBar/**/*.{h,m}'
+    end
   end
 
   s.subspec 'Utility' do |ss|
