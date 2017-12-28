@@ -139,6 +139,19 @@
     self.center = CGPointMake(self.ritl_centerX, ritl_centerY);
 }
 
+
+- (void)setRitl_maxX:(CGFloat)ritl_maxX
+{
+    self.ritl_originX = ritl_maxX - self.ritl_width;
+}
+
+
+- (void)setRitl_maxY:(CGFloat)ritl_maxY
+{
+    self.ritl_originY = ritl_maxY - self.ritl_height;
+}
+
+
 @end
 
 @implementation UIViewController (TKFrameChanged)

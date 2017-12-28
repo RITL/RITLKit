@@ -25,8 +25,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign)CGFloat ritl_centerX;
 @property (nonatomic, assign)CGFloat ritl_centerY;
 
+/*
 @property (nonatomic, assign, readonly)CGFloat ritl_maxX;
 @property (nonatomic, assign, readonly)CGFloat ritl_maxY;
+*/
+
+@property (nonatomic, assign)CGFloat ritl_maxX;
+@property (nonatomic, assign)CGFloat ritl_maxY;
 
 @property (nonatomic, assign, readonly)CGFloat ritl_minX;
 @property (nonatomic, assign, readonly)CGFloat ritl_minY;
