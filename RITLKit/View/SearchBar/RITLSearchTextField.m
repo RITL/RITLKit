@@ -42,7 +42,7 @@
     rect.size.width -= self.placeholderLeftMargin;
     
     //进行y轴偏移,使其位于中心位置
-    rect.origin.y = MIN(0,(bounds.size.height - rect.size.height) / 2.0);
+    rect.origin.y = MAX(0,(bounds.size.height - rect.size.height) / 2.0);
     
     return rect;
 }
