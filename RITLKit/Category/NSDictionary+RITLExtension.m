@@ -10,6 +10,11 @@
 
 @implementation NSDictionary (RITLExtension)
 
+- (NSString *)ritl_version
+{
+    return [NSDictionary ritl_version];
+}
+
 + (NSString *)ritl_version
 {
     NSDictionary *info = [[NSBundle mainBundle] infoDictionary];
