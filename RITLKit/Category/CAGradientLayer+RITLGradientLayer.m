@@ -9,7 +9,7 @@
 #import "CAGradientLayer+RITLGradientLayer.h"
 #import "NSArray+RITLExtension.h"
 
-@implementation CAGradientLayer (RITLGradientLayer)
+@implementation CAGradientLayer (RITL)
 
 
 +(instancetype)ritl_GradientLayer:(CGRect)bounds

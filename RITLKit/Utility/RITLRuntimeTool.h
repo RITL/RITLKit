@@ -14,4 +14,14 @@ NS_ASSUME_NONNULL_BEGIN
 void RITL_swizzledInstanceSelector(Class classObject,SEL originSel,SEL swizzledSel);
 void RITL_swizzledClassSelector(Class classObject,SEL originSel,SEL swizzledSel);
 
+
+
+
+@interface NSObject (RITLSwizzled)
+
++ (void)ritl_swizzledInstanceSelector:(SEL)originSel swizzled:(SEL)sel;
++ (void)ritl_swizzledClassSelector:(SEL)originSel swizzled:(SEL)sel;
+
+@end
+
 NS_ASSUME_NONNULL_END

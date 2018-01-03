@@ -258,3 +258,22 @@
 }
 
 @end
+
+
+@implementation NSString (RITLChecker)
+
+- (BOOL)ritl_hasSpaceWord
+{
+    if (!self || [self isEqualToString:@""]) {  return false; }
+    
+    NSMutableString * propertyHandler = [self mutableCopy];
+    
+    //去掉所有的空格
+    [propertyHandler replaceOccurrencesOfString:@" " withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [propertyHandler length])];
+    
+    //不为nil并且不为空格
+    return [propertyHandler isEqualToString:@""];
+}
+
+
+@end

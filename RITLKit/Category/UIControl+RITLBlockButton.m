@@ -8,7 +8,14 @@
 
 #import "UIControl+RITLBlockButton.h"
 #import <objc/runtime.h>
-#import <Masonry.h>
+
+#if __has_include(<Masonry/Masonry.h>)
+#import <Masonry/Masonry.h>
+#else
+#import "Masonry.h"
+#endif
+
+
 
 @implementation UIControl (RITLBlockButton)
 
@@ -136,12 +143,12 @@
     }];
     
     [control mas_makeConstraints:^(MASConstraintMaker *make) {
-       
+
         make.left.top.right.and.bottom.offset(0);
-        
+
     }];
-    
-    
+
+
     return control;
 }
 

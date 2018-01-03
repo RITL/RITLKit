@@ -11,8 +11,14 @@
 #import "UIView+RITLFrameChanged.h"
 #import "RITLUtility.h"
 #import "RITLWebScriptMessageHandler.h"
-#import <Masonry.h>
 #import <objc/runtime.h>
+
+#if __has_include(<Masonry/Masonry.h>)
+#import <Masonry/Masonry.h>
+#else
+#import "Masonry.h"
+#endif
+
 
 @import WebKit;
 
@@ -412,15 +418,18 @@
 
             if ([UIDevice currentDevice].systemVersion.floatValue >= 10.0 && [app respondsToSelector:@selector(openURL:options:completionHandler:)]) {
                 
-                [app openURL:url options:@{UIApplicationOpenURLOptionUniversalLinksOnly:@(false)}completionHandler:^(BOOL success) {}];
+                if (@available(iOS 10.0, *)) {
+                    
+                    [app openURL:url options:@{UIApplicationOpenURLOptionUniversalLinksOnly:@(false)}completionHandler:^(BOOL success) {}];
+                } else {
+                    // Fallback on earlier versions
+                }
                 
                 decisionHandler(WKNavigationActionPolicyCancel); return;
                 
             }else {
                 
-#if __IPHONE_OS_VERSION_MIN_REQUIRED < 100000
                 [app openURL:url];
-#endif
                 decisionHandler(WKNavigationActionPolicyCancel); return;
             }
         }

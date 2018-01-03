@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImage (RITLScale)
 
+/// 分辨率进行缩放
 - (NSData *)ritl_imageScaleWithSize:(CGSize)size;
 
 @end

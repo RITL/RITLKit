@@ -11,6 +11,7 @@
 #import "NSArray+RITLExtension.h"
 #import "RITLUtility.h"
 
+
 @interface RITLScrollPageViewController ()<UIGestureRecognizerDelegate>
 
 /// 自定义的滑动手势
@@ -23,7 +24,11 @@
 
 -(instancetype)init
 {
-    if (self = [super initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:self.orientation options:nil]) {}
+    if (self = [super initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:self.orientation options:nil]) {
+        
+        self.delegate = self;
+        self.dataSource = self;
+    }
     
     return self;
 }
@@ -33,10 +38,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    // 设置代理
-    self.delegate = self.delegate ? self.delegate : self;
-    self.dataSource = self.dataSource ? self.dataSource : self;
 }
 
 
@@ -205,9 +206,9 @@
 }
 
 
-- (void)viewWillLayoutSubviews
+- (void)viewDidLayoutSubviews
 {
-    [super viewWillLayoutSubviews];
+    [super viewDidLayoutSubviews];
     
     self.segmentBar.ritl_width = self.ritl_width;
     

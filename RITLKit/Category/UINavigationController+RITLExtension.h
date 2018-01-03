@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// 根据导航控制器顶部控制器的preferredStatusBarStyle
 @interface UINavigationController (RITLPreferredStatusBarStyle)
 
 @end

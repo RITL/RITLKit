@@ -6,12 +6,12 @@
 //  Copyright © 2017年 ryden. All rights reserved.
 //
 
-#import "RITLTabBarItem.h"
+#import "RITLButtonItem.h"
 #import "UIView+RITLFrameChanged.h"
 #import "RITLUtility.h"
 #import <Masonry/Masonry.h>
 
-@interface RITLTabBarItem ()
+@interface RITLButtonItem ()
 
 /// 显示消息数量的badge
 @property (nonatomic, strong) UILabel * badgeLabel;
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation RITLTabBarItem
+@implementation RITLButtonItem
 
 @synthesize badgeTextColor = _badgeTextColor;
 @synthesize badgeBarTintColor = _badgeBarTintColor;

@@ -13,6 +13,7 @@
 #define KMinMargin (/*TKScale(23)*/self.buttonsMargin)
 
 CGFloat LLSegmentBarButtonsMarginDefault = -1;
+CGFloat LLSegmentBarButtonsHeightDefault = -1;
 
 @interface LLSegmentBar ()
 
@@ -21,7 +22,7 @@ CGFloat LLSegmentBarButtonsMarginDefault = -1;
 /** 添加的按钮数据 */
 @property (nonatomic, strong) NSMutableArray <UIButton *>*itemBtns;
 /** 指示器 */
-@property (nonatomic, weak) UIView *indicatorView;
+@property (nonatomic, weak, readwrite) UIImageView *indicatorView;
 
 @property (nonatomic, strong) LLSegmentBarConfig *config;
 
@@ -42,15 +43,17 @@ CGFloat LLSegmentBarButtonsMarginDefault = -1;
     if (self = [super initWithFrame:frame]) {
         
         self.backgroundColor = self.config.sBBackColor;
-        self.borderMargin = 0.0;
-        self.isSimpleView = false;
+//        self.borderMargin = 0.0;
+        self.borderMarginInset = UIEdgeInsetsMake(2, 0, 0, 0);
+        self.simpleView = false;
         self.indicatorFitTitle = true;
         self.repetPrevent = true;
         self.indicatorConstWidth = 14;
         self.buttonAddctionWidth = 0;
         self.indicatorMarginFromBottom = 0;
-        self.buttonsMinMarginFromBorder = 23 * UIScreen.mainScreen.bounds.size.width / 375.0;
+//        self.buttonsMinMarginFromBorder = 23 * UIScreen.mainScreen.bounds.size.width / 375.0;
         self.buttonsMargin = LLSegmentBarButtonsMarginDefault;
+        self.buttonsHeight = LLSegmentBarButtonsHeightDefault;
     }
     return self;
 }
@@ -206,6 +209,12 @@ CGFloat LLSegmentBarButtonsMarginDefault = -1;
     for (UIButton *btn in self.itemBtns) {
         [btn sizeToFit];
         btn.width = (btn.width + self.buttonAddctionWidth);
+
+        if (self.buttonsHeight != LLSegmentBarButtonsHeightDefault) {//设置高度
+            
+            btn.height = self.buttonsHeight;
+        }
+        
         totalBtnWidth += (btn.width + self.buttonAddctionWidth);
     }
     
@@ -215,32 +224,36 @@ CGFloat LLSegmentBarButtonsMarginDefault = -1;
         caculateMargin = KMinMargin;
     }
     
-    CGFloat lastX = self.buttonsMinMarginFromBorder;
+    CGFloat lastX = 23;
     
     if (self.isSimpleView) {
         
-        caculateMargin = (self.width - totalBtnWidth - self.borderMargin * 2) / (self.items.count - 1);
-        lastX = self.borderMargin;//使用自定义边距
+        //        caculateMargin = (self.width - totalBtnWidth - self.borderMargin * 2) / (self.items.count - 1);
+        caculateMargin = (self.width - totalBtnWidth - self.borderMarginInset.right - self.borderMarginInset.left) / (self.items.count - 1);
+        //        lastX = self.borderMargin;//使用自定义边距
+        lastX = self.borderMarginInset.left;//使用自定义边距
     }
     
-   if(self.buttonsMargin != LLSegmentBarButtonsMarginDefault){//不是默认的平分
+    if(self.buttonsMargin != LLSegmentBarButtonsMarginDefault){//不是默认的平分
         
         caculateMargin = self.buttonsMargin;
-        lastX = self.borderMargin;
-       
-   }else {
-       
-       lastX = self.borderMargin;
-   }
+        //        lastX = self.borderMargin;
+        lastX = self.borderMarginInset.left;
+        
+    }else {
+        
+        //       lastX = self.borderMargin;
+        lastX = self.borderMarginInset.left;
+    }
     
     for (UIButton *btn in self.itemBtns) {
 
-        btn.y = 2;
+        btn.y = self.borderMarginInset.top;//
         
         btn.x = lastX;
         
         lastX += btn.width + caculateMargin;
-
+        
     }
     
     self.contentView.contentSize =  self.isSimpleView ? CGSizeMake(self.width, 0) : CGSizeMake(lastX, 0);
@@ -262,7 +275,7 @@ CGFloat LLSegmentBarButtonsMarginDefault = -1;
         self.indicatorView.width = self.indicatorConstWidth;
     }
     
-
+    
     self.indicatorView.centerX = btn.centerX;
     self.indicatorView.height = self.config.indicatorH;
     self.indicatorView.y = self.height - self.indicatorView.height - self.indicatorMarginFromBottom;
@@ -291,10 +304,10 @@ CGFloat LLSegmentBarButtonsMarginDefault = -1;
     return _itemBtns;
 }
 
-- (UIView *)indicatorView {
+- (UIImageView *)indicatorView {
     if (!_indicatorView) {
         CGFloat indicatorH = self.config.indicatorH;
-        UIView *indicatorView = [[UIView alloc] initWithFrame:CGRectMake(0, self.height - indicatorH, 0, indicatorH)];
+        UIImageView *indicatorView = [[UIImageView alloc] initWithFrame:CGRectMake(0, self.height - indicatorH, 0, indicatorH)];
         indicatorView.backgroundColor = self.config.indicatorC;
         [self.contentView addSubview:indicatorView];
         _indicatorView = indicatorView;

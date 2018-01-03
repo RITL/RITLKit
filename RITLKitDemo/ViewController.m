@@ -7,9 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "RITLScrollPageViewController.h"
+#import "RITLKit.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) UISearchController *searchController;
+@property (nonatomic, strong) UISearchBar * searchBar;
 
 @end
 
@@ -18,6 +21,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    self.searchBar = ({
+        
+        UISearchBar *searbar = [[UISearchBar alloc]initWithFrame:CGRectMake(0, 100, UIScreen.mainScreen.bounds.size.width, 44)];
+        
+        
+        searbar;
+    });
+    
+    self.searchController = [[UISearchController alloc]initWithSearchResultsController:nil];
+    
+    self.searchController.searchBar.frame = CGRectMake(0, 100, UIScreen.mainScreen.bounds.size.width, 44);
+    
+    
+    self.searchController.searchBar.layer.cornerRadius = 10;
+    [self.view addSubview:self.searchController.searchBar];
 }
 
 
