@@ -58,3 +58,19 @@ void RITL_swizzledClassSelector(Class classObject,SEL originSel,SEL swizzledSel)
 }
 
 
+@implementation NSObject (RITLSwizzled)
+
++ (void)ritl_swizzledInstanceSelector:(SEL)originSel swizzled:(SEL)sel
+{
+    RITL_swizzledInstanceSelector(self.class, originSel, sel);
+}
+
+
++ (void)ritl_swizzledClassSelector:(SEL)originSel swizzled:(SEL)sel
+{
+    RITL_swizzledClassSelector(self.class, originSel, sel);
+}
+
+@end
+
+

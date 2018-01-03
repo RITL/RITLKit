@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// 自定义的UITabBarItem
-@interface RITLTabBarItem : RITLButton
+@interface RITLButtonItem : RITLButton
 
 /// 保证图片的带下，默认为(23,23) //保证最小的
 @property (nonatomic, assign)CGSize imageSize;
@@ -60,5 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)hiddenBadge;
 
 @end
+
+typedef RITLButtonItem RITLTabBarItem;
 
 NS_ASSUME_NONNULL_END

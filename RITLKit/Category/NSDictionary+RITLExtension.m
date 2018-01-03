@@ -10,7 +10,7 @@
 
 @implementation NSDictionary (RITLExtension)
 
-- (NSString *)ritl_version
++ (NSString *)ritl_version
 {
     NSDictionary *info = [[NSBundle mainBundle] infoDictionary];
     return [info valueForKey:@"CFBundleShortVersionString"];
