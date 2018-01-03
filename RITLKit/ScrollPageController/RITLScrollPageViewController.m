@@ -206,9 +206,9 @@
 }
 
 
-- (void)viewWillLayoutSubviews
+- (void)viewDidLayoutSubviews
 {
-    [super viewWillLayoutSubviews];
+    [super viewDidLayoutSubviews];
     
     self.segmentBar.ritl_width = self.ritl_width;
     
