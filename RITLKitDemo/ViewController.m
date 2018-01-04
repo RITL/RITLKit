@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "RITLKit.h"
+#import <Masonry.h>
 
 @interface ViewController ()
 
@@ -34,10 +35,31 @@
     self.searchController = [[UISearchController alloc]initWithSearchResultsController:nil];
     
     self.searchController.searchBar.frame = CGRectMake(0, 100, UIScreen.mainScreen.bounds.size.width, 44);
-    
-    
     self.searchController.searchBar.layer.cornerRadius = 10;
     [self.view addSubview:self.searchController.searchBar];
+    
+//    UILabel *label = [UILabel new];
+//    label.text = @"小黑丹";
+//    label.backgroundColor = UIColor.yellowColor;
+//    label.font = [UIFont fontWithName:RITLFontPingFangSC_Regular size:20];
+//    
+//    [self.view addSubview:label];
+//    
+//    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+//       
+//        make.top.equalTo(self.searchController.searchBar.mas_bottom).offset(10);
+//        make.left.offset(120);
+//    }];
+//    
+//    [label addUIControlHandler:^(UIView * _Nonnull view) {
+//       
+//        //设置badge
+//        view.ritl_badgeValue = @"10";
+//        view.ritl_badgeBarTintColor = UIColor.redColor;
+//        
+//    }];
+    
+    
 }
 
 

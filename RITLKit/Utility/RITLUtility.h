@@ -122,6 +122,13 @@ static inline NSString * ritl_sizeWithLength(NSUInteger length)
 }
 
 
+/// object ? object : subObject
+static inline id ritl_default(id object,id subObject)
+{
+    return object ? object : subObject;
+}
+
+
 /// 打电话
 extern void RITLCall(NSString *telephoneNumber);
 
