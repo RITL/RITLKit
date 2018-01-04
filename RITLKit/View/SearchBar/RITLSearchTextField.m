@@ -33,6 +33,14 @@
 }
 
 
+- (CGRect)borderRectForBounds:(CGRect)bounds
+{
+    CGRect rect = [super borderRectForBounds:bounds];
+    
+    return rect;
+}
+
+
 - (CGRect)placeholderRectForBounds:(CGRect)bounds
 {
     CGRect rect = [super placeholderRectForBounds:bounds];
@@ -45,6 +53,19 @@
     rect.origin.y = MAX(0,(bounds.size.height - rect.size.height) / 2.0);
     
     return rect;
+}
+
+
+- (void)drawPlaceholderInRect:(CGRect)rect
+{
+    if (UIDevice.currentDevice.systemVersion.floatValue >= 11.0) {
+    
+        [super drawPlaceholderInRect:rect];
+        
+    }else {
+       
+        [super drawPlaceholderInRect:[self placeholderRectForBounds:self.bounds]];
+    }
 }
 
 

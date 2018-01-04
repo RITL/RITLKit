@@ -137,7 +137,6 @@
 
 
 - (void)setPlaceholderColor:(UIColor *)placeholderColor
-
 {
     _placeholderColor = placeholderColor;
     [self.searchTextField setValue:placeholderColor forKeyPath:@"_placeholderLabel.textColor"];
@@ -150,6 +149,7 @@
     
     id object = [self.searchTextField valueForKey:@"placeholderLabel"];
     [object setValue:placeholderFont forKey:@"font"];
+    [self.searchTextField setValue:placeholderFont forKeyPath:@"_placeholderLabel.font"];
 }
 
 

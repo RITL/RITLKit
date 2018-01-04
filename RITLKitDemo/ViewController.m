@@ -38,6 +38,17 @@
     self.searchController.searchBar.layer.cornerRadius = 10;
     [self.view addSubview:self.searchController.searchBar];
     
+    
+    
+    RITLSearchView *search = [[RITLSearchView alloc]initWithFrame:CGRectMake(0, 150, self.ritl_width, 40)];
+    search.placeholder = @"小黑丹";
+    search.searchInsets = UIEdgeInsetsMake(5, 5, 5, 5);
+    search.backgroundColor = UIColor.blueColor;
+    search.placeholderFont = [UIFont systemFontOfSize:5];
+    search.textFieldBackgroundColor = UIColor.greenColor;
+    search.placeholderColor = UIColor.orangeColor;
+    [self.view addSubview:search];
+    
 //    UILabel *label = [UILabel new];
 //    label.text = @"小黑丹";
 //    label.backgroundColor = UIColor.yellowColor;
