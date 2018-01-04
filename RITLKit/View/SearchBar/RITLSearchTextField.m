@@ -45,7 +45,6 @@
 {
     CGRect rect = [super placeholderRectForBounds:bounds];
     
-    //修改left
     rect.origin.x += self.placeholderLeftMargin;
     rect.size.width -= self.placeholderLeftMargin;
     
@@ -58,14 +57,18 @@
 
 - (void)drawPlaceholderInRect:(CGRect)rect
 {
-    if (UIDevice.currentDevice.systemVersion.floatValue >= 11.0) {
+    CGRect defaultPlaceholderRect = rect;
     
-        [super drawPlaceholderInRect:rect];
+    if (UIDevice.currentDevice.systemVersion.floatValue < 11.0) {
+    
+        CGRect placeholderRect = [self placeholderRectForBounds:self.bounds];
         
-    }else {
-       
-        [super drawPlaceholderInRect:[self placeholderRectForBounds:self.bounds]];
+        //修改纵坐标
+        defaultPlaceholderRect.origin.y = placeholderRect.origin.y;
+        defaultPlaceholderRect.size.height = placeholderRect.size.height;
     }
+    
+    [super drawPlaceholderInRect:defaultPlaceholderRect];
 }
 
 

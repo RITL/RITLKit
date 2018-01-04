@@ -40,13 +40,16 @@
     
     
     
-    RITLSearchView *search = [[RITLSearchView alloc]initWithFrame:CGRectMake(0, 150, self.ritl_width, 40)];
+    RITLSearchView *search = [[RITLSearchView alloc]initWithFrame:CGRectMake(0, 150, self.ritl_width, 28)];
+    search.searchTextField.layer.cornerRadius = 14;
+    search.backgroundColor = RITLColorFromIntRBG(40, 54, 80);
+    search.textFieldBackgroundColor = [UIColor.whiteColor colorWithAlphaComponent:0.2];
     search.placeholder = @"小黑丹";
-    search.searchInsets = UIEdgeInsetsMake(5, 5, 5, 5);
-    search.backgroundColor = UIColor.blueColor;
-    search.placeholderFont = [UIFont systemFontOfSize:5];
-    search.textFieldBackgroundColor = UIColor.greenColor;
-    search.placeholderColor = UIColor.orangeColor;
+//    search.searchInsets = UIEdgeInsetsMake(5, 5, 5, 5);
+    search.leftImage = @"icon_search".ritl_image;
+    search.searchIconInsets = UIEdgeInsetsMake(6, 8, 6, 0);
+    search.placeholderFont = [UIFont systemFontOfSize:12];
+    search.placeholderColor = UIColor.whiteColor;
     [self.view addSubview:search];
     
 //    UILabel *label = [UILabel new];
