@@ -55,6 +55,9 @@ extern CGFloat LLSegmentBarButtonsHeightDefault;
 /** 指示器 */
 @property (nonatomic, weak, readonly) UIImageView *indicatorView;
 
+/// 当前位置的button
+- (UIButton*)buttonWithIndex:(NSInteger)index;
+
 #pragma mark - 功能扩充
 
 /// 是否进行重复点击同一个button的阻隔信号，默认为true

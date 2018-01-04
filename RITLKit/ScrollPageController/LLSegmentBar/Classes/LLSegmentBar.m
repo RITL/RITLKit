@@ -198,6 +198,13 @@ CGFloat LLSegmentBarButtonsHeightDefault = -1;
 }
 
 
+- (UIButton *)buttonWithIndex:(NSInteger)index
+{
+    if (index >= self.itemBtns.count || index < 0) { return nil; }
+    
+    return self.itemBtns[index];
+}
+
 
 #pragma mark - layout
 - (void)layoutSubviews{
