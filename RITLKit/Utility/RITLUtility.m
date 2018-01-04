@@ -7,7 +7,6 @@
 //
 
 #import "RITLUtility.h"
-#import "NSString+RITLExtension.h"
 
 @implementation RITLUtility
 
@@ -70,20 +69,20 @@ void RITLCall(NSString *telephoneNumber)
     UIApplication *application = [UIApplication sharedApplication];
     
     
-    if ([application canOpenURL:tel.ritl_url]) {
+    if ([application canOpenURL:[NSURL URLWithString:tel]]) {
         
         //#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 100000
         if ([UIDevice currentDevice].systemVersion.floatValue >= 10.0 && [application respondsToSelector:@selector(openURL:options:completionHandler:)]) {
             
             if (@available(iOS 10.0, *)) {
-                [application openURL:tel.ritl_url options:@{UIApplicationOpenURLOptionUniversalLinksOnly:@(false)}completionHandler:^(BOOL success) {}];
+                [application openURL:[NSURL URLWithString:tel] options:@{UIApplicationOpenURLOptionUniversalLinksOnly:@(false)}completionHandler:^(BOOL success) {}];
                 
             } else {
                 // Fallback on earlier versions
             }
         }else {
             
-            [application openURL:tel.ritl_url];
+            [application openURL:[NSURL URLWithString:tel]];
             
         }
         
