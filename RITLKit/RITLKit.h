@@ -13,6 +13,7 @@
 #import "RITLUtility.h"
 #import "RITLTimer.h"
 #import "RITLRuntimeTool.h"
+#import "RITLViewExtension.h"
 #import "RITLArchiverManager.h"
 #import "RITLDictionaryProxy.h"
 

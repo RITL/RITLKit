@@ -36,7 +36,7 @@
     
     self.searchController.searchBar.frame = CGRectMake(0, 100, UIScreen.mainScreen.bounds.size.width, 44);
     self.searchController.searchBar.layer.cornerRadius = 10;
-    [self.view addSubview:self.searchController.searchBar];
+//    [self.view addSubview:self.searchController.searchBar];
     
     
     
@@ -50,7 +50,9 @@
     search.searchIconInsets = UIEdgeInsetsMake(6, 8, 6, 0);
     search.placeholderFont = [UIFont systemFontOfSize:12];
     search.placeholderColor = UIColor.whiteColor;
-    [self.view addSubview:search];
+//    [self.view addSubview:search];
+    
+    self.view.ritl_view.add(self.searchController.searchBar).add(search);
     
 //    UILabel *label = [UILabel new];
 //    label.text = @"小黑丹";
@@ -80,6 +82,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (void)dealloc
+{
+    NSInteger i = 0;
 }
 
 

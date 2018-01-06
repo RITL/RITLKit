@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB23A20020011F76004F37D2 /* RITLViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB23A1FF20011F76004F37D2 /* RITLViewExtension.m */; };
 		DB41C8721FCF93FB0035AC4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C8711FCF93FB0035AC4A /* AppDelegate.m */; };
 		DB41C8751FCF93FB0035AC4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C8741FCF93FB0035AC4A /* ViewController.m */; };
 		DB41C8781FCF93FB0035AC4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB41C8761FCF93FB0035AC4A /* Main.storyboard */; };
@@ -59,6 +60,8 @@
 		23C2315AEE5D22FD49407BF5 /* libPods-RITLKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RITLKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		374934276214B3CCCC53D9B4 /* Pods-RITLKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RITLKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RITLKitDemo/Pods-RITLKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BD51B089C949D25D17060DE0 /* Pods-RITLKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RITLKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RITLKitDemo/Pods-RITLKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DB23A1FE20011F76004F37D2 /* RITLViewExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RITLViewExtension.h; sourceTree = "<group>"; };
+		DB23A1FF20011F76004F37D2 /* RITLViewExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RITLViewExtension.m; sourceTree = "<group>"; };
 		DB41C86D1FCF93FB0035AC4A /* RITLKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RITLKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB41C8701FCF93FB0035AC4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DB41C8711FCF93FB0035AC4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -345,6 +348,8 @@
 		DB8429811FCFEEE4004E85F7 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				DB23A1FE20011F76004F37D2 /* RITLViewExtension.h */,
+				DB23A1FF20011F76004F37D2 /* RITLViewExtension.m */,
 				DB84298A1FCFEF0B004E85F7 /* RITLArchiverManager.h */,
 				DB8429831FCFEF0B004E85F7 /* RITLArchiverManager.m */,
 				DB8429871FCFEF0B004E85F7 /* RITLDictionaryProxy.h */,
@@ -521,6 +526,7 @@
 				DB41C8DE1FCF94840035AC4A /* NSNumber+RITLExtension.m in Sources */,
 				DB41C9231FCFD1370035AC4A /* RITLButtonItem.m in Sources */,
 				DB41C8DD1FCF94840035AC4A /* NSDictionary+RITLExtension.m in Sources */,
+				DB23A20020011F76004F37D2 /* RITLViewExtension.m in Sources */,
 				DB41C8E11FCF94840035AC4A /* UIColor+RITLExtension.m in Sources */,
 				DB84298B1FCFEF0B004E85F7 /* RITLArchiverManager.m in Sources */,
 				DB41C9131FCFCE3A0035AC4A /* LLSegmentBarVC.m in Sources */,
