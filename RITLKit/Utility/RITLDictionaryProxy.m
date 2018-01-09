@@ -177,7 +177,7 @@
 
 
 
-id TKEnityCreateWithData(NSDictionary *data)
+id RITLEnityCreateWithData(NSDictionary *data)
 {
     return [[RITLDictionaryProxy alloc]initWithData:data];
 }
