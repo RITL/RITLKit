@@ -52,7 +52,7 @@
     search.placeholderColor = UIColor.whiteColor;
 //    [self.view addSubview:search];
     
-    self.view.ritl_view.add(self.searchController.searchBar).add(search);
+    self.view.ritl_view.add(self.searchController.searchBar).add(search).remove(search);
     
 //    UILabel *label = [UILabel new];
 //    label.text = @"小黑丹";

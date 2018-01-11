@@ -12,11 +12,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// 一个链式的添加子视图
-@interface RITLViewAddHandler : NSObject
+@interface RITLViewHandler : NSObject
 
 /// 添加子视图
-- (RITLViewAddHandler *(^)(UIView *))add;
+- (RITLViewHandler *(^)(UIView *))add;
 
+/// 移除子视图
+- (RITLViewHandler *(^)(UIView *))remove;
 
 @end
 
@@ -37,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIView (RITLViewAddHandler)
 
 /// 追加视图
-@property (nonatomic, strong, readonly) RITLViewAddHandler *ritl_view;
+@property (nonatomic, strong, readonly) RITLViewHandler *ritl_view;
 
 @end
 

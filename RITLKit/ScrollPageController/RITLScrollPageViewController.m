@@ -173,7 +173,6 @@
          [self.view addSubview:self.segmentBar];
     }
     
-    
     //初始化手势
     self.ritl_panGestureRecognizer = [UIPanGestureRecognizer new];
     self.ritl_panGestureRecognizer.delegate = self;

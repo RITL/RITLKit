@@ -9,21 +9,33 @@
 #import "RITLViewExtension.h"
 #import <objc/runtime.h>
 
-@interface RITLViewAddHandler()
+@interface RITLViewHandler()
 
 /// 所在的view
 @property (nonatomic, weak) UIView *containView;
 
 @end
 
-@implementation RITLViewAddHandler
+@implementation RITLViewHandler
 
-- (RITLViewAddHandler * _Nonnull (^)(UIView * _Nonnull))add
+- (RITLViewHandler * _Nonnull (^)(UIView * _Nonnull))add
 {
     return ^id(UIView * _Nonnull view){
         
         [self.containView addSubview:view];
         
+        return self;
+    };
+}
+
+- (RITLViewHandler * _Nonnull (^)(UIView * _Nonnull))remove
+{
+    return ^id(UIView * _Nonnull view){
+      
+        if ([view isDescendantOfView:self.containView]) {
+            
+            [view removeFromSuperview];
+        }
         return self;
     };
 }
@@ -37,22 +49,22 @@
 
 @end
 
-@interface RITLViewAddHandler (UIView)<RITLViewHandler>
+@interface RITLViewHandler (UIView)<RITLViewHandler>
 @end
 
 
 @implementation UIView (RITLViewAddHandler)
 
-- (RITLViewAddHandler *)ritl_view
+- (RITLViewHandler *)ritl_view
 {
-    RITLViewAddHandler* handler = objc_getAssociatedObject(self, _cmd);
+    RITLViewHandler* handler = objc_getAssociatedObject(self, _cmd);
     
     if (handler) {
         
         return handler;
     }
     
-    handler = RITLViewAddHandler.new;
+    handler = RITLViewHandler.new;
     handler.containView = self;
     
     objc_setAssociatedObject(self, _cmd, handler, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
