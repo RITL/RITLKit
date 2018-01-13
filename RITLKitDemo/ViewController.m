@@ -54,6 +54,12 @@
     
     self.view.ritl_view.add(self.searchController.searchBar).add(search).remove(search);
     
+    
+    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, 190, 60, 30)];
+//    button.ritl_NormalTitle = @"Hello";
+    
+    self.view.ritl_view.add(button);
+    
 //    UILabel *label = [UILabel new];
 //    label.text = @"小黑丹";
 //    label.backgroundColor = UIColor.yellowColor;

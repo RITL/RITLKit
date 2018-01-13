@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  自定义button,类型为上图下文字
+ 建议使用功能更加齐全的---- RITLButtonItem
  */
 @interface RITLButton : UIButton
 

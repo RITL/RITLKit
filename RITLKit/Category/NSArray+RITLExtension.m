@@ -57,7 +57,7 @@
     
     for (id object in self) {
         
-        result = reduceHandler(result,object);
+        result = reduceHandler(result,object ? object : NSNull.null);
     }
     
     return result;

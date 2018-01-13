@@ -120,13 +120,13 @@
 
 -(void)setRitl_width:(CGFloat)ritl_width
 {
-    [self setRitl_size:CGSizeMake(ritl_width, self.ritl_height)];
+    [self setRitl_size:CGSizeMake(MAX(0,ritl_width), self.ritl_height)];
 }
 
 
 -(void)setRitl_height:(CGFloat)ritl_height
 {
-    [self setRitl_size:CGSizeMake(self.ritl_width, ritl_height)];
+    [self setRitl_size:CGSizeMake(self.ritl_width, MAX(0,ritl_height))];
 }
 
 -(void)setRitl_centerX:(CGFloat)ritl_centerX
@@ -282,5 +282,104 @@
 
 
 @end
+
+
+@implementation CALayer (RITLFrameChanged)
+
+#pragma mark - Layer Getter
+
+- (CGPoint)ritl_originPoint
+{
+    return self.position;
+}
+
+- (CGSize)ritl_size
+{
+    return self.bounds.size;
+}
+
+- (CGFloat)ritl_originX
+{
+    return self.ritl_originPoint.x;
+}
+
+- (CGFloat)ritl_originY
+{
+    return self.ritl_originPoint.y;
+}
+
+- (CGFloat)ritl_width
+{
+    return self.ritl_size.width;
+}
+
+- (CGFloat)ritl_height
+{
+    return self.ritl_size.height;
+}
+
+
+- (CGFloat)ritl_anchorPointX
+{
+    return self.anchorPoint.x;
+}
+
+- (CGFloat)ritl_anchorPointY
+{
+    return self.anchorPoint.y;
+}
+
+#pragma mark - Layer Setter
+
+- (void)setRitl_originPoint:(CGPoint)ritl_originPoint
+{
+    self.position = ritl_originPoint;
+}
+
+- (void)setRitl_size:(CGSize)ritl_size
+{
+    CGRect bounds = self.bounds;
+    bounds.size = ritl_size;
+    self.bounds = bounds;
+}
+
+
+
+- (void)setRitl_originX:(CGFloat)ritl_originX
+{
+    self.position = CGPointMake(ritl_originX, self.ritl_anchorPointY);
+}
+
+- (void)setRitl_originY:(CGFloat)ritl_originY
+{
+    self.position = CGPointMake(self.ritl_anchorPointX, ritl_originY);
+}
+
+
+- (void)setRitl_width:(CGFloat)ritl_width
+{
+    self.ritl_size = CGSizeMake(MAX(0,ritl_width), self.ritl_height);
+}
+
+- (void)setRitl_height:(CGFloat)ritl_height
+{
+    self.ritl_size = CGSizeMake(self.ritl_width, MAX(0,ritl_height));
+}
+
+
+- (void)setRitl_anchorPointX:(CGFloat)ritl_anchorPointX
+{
+    self.position = CGPointMake(ritl_anchorPointX, self.ritl_originY);
+}
+
+
+- (void)setRitl_anchorPointY:(CGFloat)ritl_anchorPointY
+{
+    self.position = CGPointMake(self.ritl_originX, ritl_anchorPointY);
+}
+
+@end
+
+
 
 
