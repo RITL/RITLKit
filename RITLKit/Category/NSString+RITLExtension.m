@@ -275,7 +275,7 @@
     return [propertyHandler isEqualToString:@""];
 }
 
-- (BOOL)isInteger
+- (BOOL)ritl_isInteger
 {
     NSScanner* scan = [NSScanner scannerWithString:self];
     
@@ -285,7 +285,7 @@
 }
 
 
-- (BOOL)isContainChinese
+- (BOOL)ritl_containChinese
 {
     for(int i = 0; i< [self length]; i++)
     {
