@@ -262,6 +262,7 @@
 
 @implementation NSString (RITLChecker)
 
+
 - (BOOL)ritl_hasSpaceWord
 {
     if (!self || [self isEqualToString:@""]) {  return false; }
@@ -275,6 +276,8 @@
     return [propertyHandler isEqualToString:@""];
 }
 
+
+
 - (BOOL)ritl_isInteger
 {
     NSScanner* scan = [NSScanner scannerWithString:self];
@@ -283,6 +286,7 @@
     
     return[scan scanInt:&val] && [scan isAtEnd];
 }
+
 
 
 - (BOOL)ritl_containChinese

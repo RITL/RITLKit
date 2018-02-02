@@ -88,8 +88,9 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@interface NSString (RITLChecker)
 
+
+@interface NSString (RITLChecker)
 
 /**
  是否存在空格或者是否全是空格
