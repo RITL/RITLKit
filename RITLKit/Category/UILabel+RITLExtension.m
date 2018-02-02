@@ -13,7 +13,7 @@
 
 - (CGSize)ritl_contentSize
 {
-    return [self textRectForBounds:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height) limitedToNumberOfLines:self.numberOfLines].size;
+    return [self textRectForBounds:CGRectMake(0, 0, self.bounds.size.width, 1000) limitedToNumberOfLines:self.numberOfLines].size;
 }
 
 - (CGFloat)ritl_contentWidth

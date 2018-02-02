@@ -52,4 +52,19 @@
     return cell;
 }
 
+
+- (UITableViewCell *)ritl_dequeueReusableCellWithIdentifier:(NSString *)identifier class:(Class)cellClass buildComplete:(RITLReusableCellInitHandler)handler
+{
+    UITableViewCell *cell = [self dequeueReusableCellWithIdentifier:identifier];
+    
+    if (!cell) {
+        
+        cell =  [[cellClass alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        
+        if (handler) {  handler(cell); }
+    }
+    
+    return cell;
+}
+
 @end

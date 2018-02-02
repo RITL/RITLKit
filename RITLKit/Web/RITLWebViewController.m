@@ -59,7 +59,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor orangeColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     if (!RITL_iOS_Version_GreaterThanOrEqualTo(11.0)) {
         
@@ -347,10 +347,20 @@
         closeItem.imageInsets = UIEdgeInsetsMake(0, -20, 0, 20);
         closeItem.width = 32;
         
-        return @[backItem,closeItem];
+        if (backItem) {
+            
+           return @[backItem,closeItem];
+        }
+        
+        return @[closeItem];
     }
     
-    return @[backItem];
+    if (backItem) {
+        
+        return @[backItem];
+    }
+    
+    return nil;
     
 }
 

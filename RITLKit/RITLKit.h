@@ -31,6 +31,7 @@
 #import "NSArray+RITLExtension.h"
 #import "UIColor+RITLExtension.h"
 #import "UIImage+RITLExtension.h"
+#import "UIButton+RITLKit.h"
 #import "NSObject+RITLExtension.h"
 #import "NSNumber+RITLExtension.h"
 #import "NSString+RITLExtension.h"

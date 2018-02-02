@@ -97,6 +97,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign, readonly)BOOL ritl_hasSpaceWord;
 
+/// 是否为整数
+@property (nonatomic, assign, readonly)BOOL ritl_isInteger;
+
+/// 是否包含中文字
+@property (nonatomic, assign, readonly)BOOL ritl_containChinese;
+
 
 @end
 

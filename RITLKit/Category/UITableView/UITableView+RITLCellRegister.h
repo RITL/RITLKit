@@ -10,6 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^RITLReusableCellInitHandler)(__kindof UITableViewCell *cell);
+
+
 @interface UITableView (RITLCellRegister)
 
 /**
@@ -39,6 +42,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 - (__kindof UITableViewCell *)ritl_dequeueReusableCellWithIdentifier:(NSString *)identifier class:(Class)cellClass;
+
+
+/// handler为第一次创建cell时候进行的设置
+- (__kindof UITableViewCell *)ritl_dequeueReusableCellWithIdentifier:(NSString *)identifier
+                                                               class:(Class)cellClass
+                                                       buildComplete:(nullable RITLReusableCellInitHandler)handler;
+
 
 @end
 

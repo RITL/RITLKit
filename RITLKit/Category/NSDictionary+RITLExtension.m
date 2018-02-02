@@ -42,6 +42,7 @@
     return [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
 }
 
+
 - (NSString *)ritl_javascript_json
 {
     if (![NSJSONSerialization isValidJSONObject:self]) {

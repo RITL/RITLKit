@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DB23A20020011F76004F37D2 /* RITLViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB23A1FF20011F76004F37D2 /* RITLViewExtension.m */; };
+		DB2AE0A32022A8A2009E63FF /* UIButton+RITLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2AE0A22022A8A2009E63FF /* UIButton+RITLKit.m */; };
+		DB2AE0A62022A8E3009E63FF /* UITableView+RITLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2AE0A42022A8E3009E63FF /* UITableView+RITLExtension.m */; };
 		DB41C8721FCF93FB0035AC4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C8711FCF93FB0035AC4A /* AppDelegate.m */; };
 		DB41C8751FCF93FB0035AC4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C8741FCF93FB0035AC4A /* ViewController.m */; };
 		DB41C8781FCF93FB0035AC4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB41C8761FCF93FB0035AC4A /* Main.storyboard */; };
@@ -62,6 +64,10 @@
 		BD51B089C949D25D17060DE0 /* Pods-RITLKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RITLKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RITLKitDemo/Pods-RITLKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DB23A1FE20011F76004F37D2 /* RITLViewExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RITLViewExtension.h; sourceTree = "<group>"; };
 		DB23A1FF20011F76004F37D2 /* RITLViewExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RITLViewExtension.m; sourceTree = "<group>"; };
+		DB2AE0A12022A8A2009E63FF /* UIButton+RITLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+RITLKit.h"; sourceTree = "<group>"; };
+		DB2AE0A22022A8A2009E63FF /* UIButton+RITLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RITLKit.m"; sourceTree = "<group>"; };
+		DB2AE0A42022A8E3009E63FF /* UITableView+RITLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+RITLExtension.m"; sourceTree = "<group>"; };
+		DB2AE0A52022A8E3009E63FF /* UITableView+RITLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+RITLExtension.h"; sourceTree = "<group>"; };
 		DB41C86D1FCF93FB0035AC4A /* RITLKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RITLKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB41C8701FCF93FB0035AC4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DB41C8711FCF93FB0035AC4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -181,6 +187,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DB2AE0A72022AA78009E63FF /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				DB2AE0A52022A8E3009E63FF /* UITableView+RITLExtension.h */,
+				DB2AE0A42022A8E3009E63FF /* UITableView+RITLExtension.m */,
+				DB41C8A11FCF94840035AC4A /* UITableView+RITLCellRegister.h */,
+				DB41C8A21FCF94840035AC4A /* UITableView+RITLCellRegister.m */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		DB2AE0A82022AA9E009E63FF /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				DB41C8A31FCF94840035AC4A /* UIView+RITLFrameChanged.h */,
+				DB41C8A41FCF94840035AC4A /* UIView+RITLFrameChanged.m */,
+				DB41C8A51FCF94840035AC4A /* UIView+RITLExtension.h */,
+				DB41C8A61FCF94840035AC4A /* UIView+RITLExtension.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		DB41C8641FCF93FB0035AC4A = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +265,10 @@
 		DB41C8871FCF94840035AC4A /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				DB2AE0A82022AA9E009E63FF /* UIView */,
+				DB2AE0A72022AA78009E63FF /* UITableView */,
+				DB2AE0A12022A8A2009E63FF /* UIButton+RITLKit.h */,
+				DB2AE0A22022A8A2009E63FF /* UIButton+RITLKit.m */,
 				DB722F5B1FFCC2ED00CCF52C /* NSObject+RITLMutable.h */,
 				DB722F5A1FFCC2ED00CCF52C /* NSObject+RITLMutable.m */,
 				DB41C8881FCF94840035AC4A /* CAGradientLayer+RITLGradientLayer.h */,
@@ -263,12 +295,6 @@
 				DB41C89E1FCF94840035AC4A /* UINavigationController+RITLExtension.m */,
 				DB41C89F1FCF94840035AC4A /* UISearchBar+RITLCustomColor.h */,
 				DB41C8A01FCF94840035AC4A /* UISearchBar+RITLCustomColor.m */,
-				DB41C8A11FCF94840035AC4A /* UITableView+RITLCellRegister.h */,
-				DB41C8A21FCF94840035AC4A /* UITableView+RITLCellRegister.m */,
-				DB41C8A31FCF94840035AC4A /* UIView+RITLFrameChanged.h */,
-				DB41C8A41FCF94840035AC4A /* UIView+RITLFrameChanged.m */,
-				DB41C8A51FCF94840035AC4A /* UIView+RITLExtension.h */,
-				DB41C8A61FCF94840035AC4A /* UIView+RITLExtension.m */,
 				DB41C8A91FCF94840035AC4A /* UIViewController+RITLExtension.h */,
 				DB41C8AA1FCF94840035AC4A /* UIViewController+RITLExtension.m */,
 				DB660C7B1FECF11D00991D1D /* UILabel+RITLExtension.h */,
@@ -516,9 +542,11 @@
 				DB84298C1FCFEF0B004E85F7 /* RITLRuntimeTool.m in Sources */,
 				DB41C8801FCF93FB0035AC4A /* main.m in Sources */,
 				DB41C8DA1FCF94840035AC4A /* CAGradientLayer+RITLGradientLayer.m in Sources */,
+				DB2AE0A32022A8A2009E63FF /* UIButton+RITLKit.m in Sources */,
 				DB41C8E31FCF94840035AC4A /* UIImage+RITLExtension.m in Sources */,
 				DBC73E221FE75D6500031EEE /* RITLSearchTextField.m in Sources */,
 				DB41C9141FCFCE3A0035AC4A /* UIView+LLSegmentBar.m in Sources */,
+				DB2AE0A62022A8E3009E63FF /* UITableView+RITLExtension.m in Sources */,
 				DB8429911FCFEF1D004E85F7 /* RITLUtility.m in Sources */,
 				DB41C9181FCFCE5A0035AC4A /* RITLScrollPageViewController.m in Sources */,
 				DB41C8DC1FCF94840035AC4A /* NSDate+RITLExtension.m in Sources */,

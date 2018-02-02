@@ -275,5 +275,30 @@
     return [propertyHandler isEqualToString:@""];
 }
 
+- (BOOL)isInteger
+{
+    NSScanner* scan = [NSScanner scannerWithString:self];
+    
+    int val;
+    
+    return[scan scanInt:&val] && [scan isAtEnd];
+}
+
+
+- (BOOL)isContainChinese
+{
+    for(int i = 0; i< [self length]; i++)
+    {
+        unichar a = [self characterAtIndex:i];
+        
+        if( a >= 0x4E00 && a <= 0x9FA5){
+            
+            return true;
+        }
+    }
+    
+    return false;
+}
+
 
 @end
