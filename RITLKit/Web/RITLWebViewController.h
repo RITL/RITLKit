@@ -20,12 +20,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// 注册的名字
 @property (nonatomic, copy) NSString *name;
 
-
 @end
 
-
 typedef void(^RITLWebControllerConfigHandler)(RITLWebViewController *viewController);
-
+typedef void(^RITLWebControllerTapHandler)(RITLWebViewController *viewController,UIBarButtonItem *item);
 
 
 /// 网页加载控制器
@@ -78,20 +76,27 @@ typedef void(^RITLWebControllerConfigHandler)(RITLWebViewController *viewControl
 
 #pragma mark - item
 
+/// default : 32
+@property (nonatomic, assign)CGFloat closeWidth;
+
 
 /// 默认为false
 @property (nonatomic, assign)BOOL useRightCloseItem;
 /// 关闭存在于右侧导航栏的image
 @property (nonatomic, strong, nullable) UIImage *rightCloseImage;
 /// rightCloseButtondidTap
-@property (nonatomic, copy, nullable)void(^rightCloseButtonTap)(RITLWebViewController *webController,UIBarButtonItem *item);
+@property (nonatomic, copy, nullable)RITLWebControllerTapHandler rightCloseButtonTap;
+/// 默认(0,20,0,20)
+@property (nonatomic, assign)UIEdgeInsets rightImageInset;
 
 /// 默认为false
 @property (nonatomic, assign)BOOL useLeftCloseItem;
 /// 关闭存在与back右侧栏的image
 @property (nonatomic, strong, nullable) UIImage *leftCloseImage;
 /// leftCloseButtondidTap
-@property (nonatomic, copy, nullable)void(^leftCloseButtonTap)(RITLWebViewController *webController,UIBarButtonItem *item);
+@property (nonatomic, copy, nullable)RITLWebControllerTapHandler leftCloseButtonTap;
+/// 默认(0,20,0,20)
+@property (nonatomic, assign)UIEdgeInsets leftImageInset;
 
 
 

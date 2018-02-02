@@ -39,6 +39,9 @@
         self.autoTitle = true;
         self.useLeftCloseItem = false;
         self.useRightCloseItem = false;
+        self.closeWidth = 32;
+        self.leftImageInset = UIEdgeInsetsMake(0, -20, 0, 20);
+        self.rightImageInset = self.leftImageInset;
     }
     
     return self;
@@ -359,8 +362,8 @@
             
             UIBarButtonItem *closeItem = [[UIBarButtonItem alloc]initWithImage:/*@"关闭"*/self.leftCloseImage style:UIBarButtonItemStylePlain target:self action:@selector(close:)];
             
-            closeItem.imageInsets = UIEdgeInsetsMake(0, -20, 0, 20);
-            closeItem.width = 32;
+            closeItem.imageInsets = self.leftImageInset;
+            closeItem.width = self.closeWidth;
             
             if (backItem) { return @[backItem,closeItem]; }//存在默认返回
             
@@ -379,8 +382,8 @@
         
         UIBarButtonItem *closeItem = [[UIBarButtonItem alloc]initWithImage:/*@"关闭"*/self.rightCloseImage style:UIBarButtonItemStylePlain target:self action:@selector(close:)];
         
-        closeItem.imageInsets = UIEdgeInsetsMake(0, -20, 0, 20);
-        closeItem.width = 32;
+        closeItem.imageInsets = self.rightImageInset;
+        closeItem.width = self.closeWidth;
         
         return @[closeItem];
     }
