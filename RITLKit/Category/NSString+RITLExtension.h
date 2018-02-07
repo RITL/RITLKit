@@ -92,6 +92,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (RITLChecker)
 
+/// 是否为空字符串
+@property (nonatomic, assign, readonly)BOOL isEmpty;
+
 /**
  是否存在空格或者是否全是空格
  检测字符串属性是否符合上传标准,放置字符串因为空格占位而出现空白
@@ -104,6 +107,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// 是否包含中文字
 @property (nonatomic, assign, readonly)BOOL ritl_containChinese;
 
+@end
+
+
+@interface NSString (RITLPredicated)
+
+/// 是否符合该正则表达式
+- (BOOL)ritl_evaluatePredicate:(NSString *)predicate;
 
 @end
 

@@ -305,4 +305,22 @@
 }
 
 
+- (BOOL)isEmpty
+{
+    return [self isEqualToString:@""];
+}
+
 @end
+
+
+@implementation NSString (RITLPredicated)
+
+- (BOOL)ritl_predicatedMatches:(NSString *)predicate
+{
+    NSPredicate *nspredicate = [NSPredicate predicateWithFormat:predicate];
+    
+    return [nspredicate evaluateWithObject:self];
+}
+
+@end
+

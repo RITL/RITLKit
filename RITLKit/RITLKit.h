@@ -21,6 +21,7 @@
 #import "RITLButtonItem.h"
 #import "RITLSearchView.h"
 #import "RITLSearchTextField.h"
+#import "RITLImagePickerController.h"
 #import "RITLScrollPageViewController.h"
 
 

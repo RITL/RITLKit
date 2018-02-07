@@ -17,4 +17,18 @@
     return [NSString stringWithFormat:@"%@",@(date.timeIntervalSince1970)];
 }
 
+
++ (NSString *)ritl_uploadTime
+{
+    NSDate * timeDate = [NSDate date];
+    
+    NSDateFormatter * dateformatter = [[NSDateFormatter alloc] init];
+    
+    [dateformatter setDateFormat:@"yyyyMMddHHmmss"];
+    
+    NSString *  locationString =[dateformatter stringFromDate:timeDate];
+    
+    return locationString;
+}
+
 @end
