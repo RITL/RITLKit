@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'RITLKit'
-  s.version      = '0.2.1'
+  s.version      = '0.3.0'
   s.summary      = "The commonly Used Objective-C RITLKit."
 
   s.homepage     = "https://github.com/RITL/RITLKit"
@@ -39,6 +39,10 @@ Pod::Spec.new do |s|
 
   s.subspec 'Utility' do |ss|
     ss.source_files = 'RITLKit/Utility/**/*.{h,m}'
+  end
+
+   s.subspec 'ImagePicker' do |ss|
+    ss.source_files = 'RITLKit/ImagePicker/**/*.{h,m}'
   end
 
   s.subspec 'View' do |ss|
