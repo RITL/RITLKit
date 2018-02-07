@@ -315,7 +315,7 @@
 
 @implementation NSString (RITLPredicated)
 
-- (BOOL)ritl_predicatedMatches:(NSString *)predicate
+- (BOOL)ritl_evaluatePredicate:(NSString *)predicate
 {
     NSPredicate *nspredicate = [NSPredicate predicateWithFormat:predicate];
     
