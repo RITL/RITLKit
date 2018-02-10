@@ -67,11 +67,12 @@
 }
 
 
-- (UIImage *)ritl_imageWithMaxSize:(CGFloat)size
+
+- (NSData *)ritl_imageDataWithMaxSize:(CGFloat)size
 {
     if (![self ritl_sizeIsGetterThan:size]) {//如果不大于，直接返回自己
         
-        return self;
+        return UIImageJPEGRepresentation(self, 1.0);
     }
     
     // 进行KB转换
@@ -81,7 +82,20 @@
     CGFloat scale = size / sizeKB;
     
     // 返回压缩后的图片
-    return [UIImage imageWithData:UIImageJPEGRepresentation(self, scale)];
+    return UIImageJPEGRepresentation(self, scale);
+}
+
+
+
+- (UIImage *)ritl_imageWithMaxSize:(CGFloat)size
+{
+    if (![self ritl_sizeIsGetterThan:size]) {//如果不大于，直接返回自己
+        
+        return self;
+    }
+    
+    // 返回压缩后的图片
+    return [UIImage imageWithData:[self ritl_imageDataWithMaxSize:size]];
     
 }
 

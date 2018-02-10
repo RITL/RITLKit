@@ -37,6 +37,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 大小是否大于`size`(KB)
 - (BOOL)ritl_sizeIsGetterThan:(CGFloat)size;
 
+/// 获得压缩为最大大小为size的data
+- (NSData *)ritl_imageDataWithMaxSize:(CGFloat)size;
+
 /// 获得压缩为最大大小为size的图片
 - (UIImage *)ritl_imageWithMaxSize:(CGFloat)size;
 
