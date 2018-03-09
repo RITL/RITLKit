@@ -56,9 +56,14 @@
     
     
     UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, 190, 60, 30)];
-//    button.ritl_NormalTitle = @"Hello";
+    button.ritl_normalTitle = @"Hello";
+//    button.ritl_normalBackgroundImage = UIColor.blueColor.ritl_image;
+    button.ritl_normalTitleColor = UIColor.whiteColor;
+//    button.ritl_normalImage = UIColor.whiteColor.ritl_image;
+//    button.ritl_normalBackgroundImage
     
     self.view.ritl_view.add(button);
+    
     
 //    UILabel *label = [UILabel new];
 //    label.text = @"小黑丹";
