@@ -50,6 +50,10 @@
 		DB84298D1FCFEF0B004E85F7 /* RITLDictionaryProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8429851FCFEF0B004E85F7 /* RITLDictionaryProxy.m */; };
 		DB84298E1FCFEF0B004E85F7 /* RITLTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8429861FCFEF0B004E85F7 /* RITLTimer.m */; };
 		DB8429911FCFEF1D004E85F7 /* RITLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8429901FCFEF1D004E85F7 /* RITLUtility.m */; };
+		DBB9E47F20A1756300A1ABE2 /* AppleReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB9E47D20A1756300A1ABE2 /* AppleReachability.m */; };
+		DBB9E48520A175C000A1ABE2 /* RITLFileDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB9E48120A175BF00A1ABE2 /* RITLFileDownloader.m */; };
+		DBB9E48620A175C000A1ABE2 /* RITLDownLoaderFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB9E48420A175BF00A1ABE2 /* RITLDownLoaderFileManager.m */; };
+		DBB9E48A20A1761800A1ABE2 /* RITLFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB9E48920A1761800A1ABE2 /* RITLFilter.m */; };
 		DBC73E221FE75D6500031EEE /* RITLSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC73E1F1FE75D6500031EEE /* RITLSearchTextField.m */; };
 		DBC73E231FE75D6500031EEE /* RITLSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC73E211FE75D6500031EEE /* RITLSearchView.m */; };
 		DBC73E261FE76A1700031EEE /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC73E251FE76A1700031EEE /* TableViewController.m */; };
@@ -149,6 +153,14 @@
 		DB84298A1FCFEF0B004E85F7 /* RITLArchiverManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLArchiverManager.h; sourceTree = "<group>"; };
 		DB84298F1FCFEF1D004E85F7 /* RITLUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RITLUtility.h; sourceTree = "<group>"; };
 		DB8429901FCFEF1D004E85F7 /* RITLUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RITLUtility.m; sourceTree = "<group>"; };
+		DBB9E47D20A1756300A1ABE2 /* AppleReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleReachability.m; sourceTree = "<group>"; };
+		DBB9E47E20A1756300A1ABE2 /* AppleReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleReachability.h; sourceTree = "<group>"; };
+		DBB9E48120A175BF00A1ABE2 /* RITLFileDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLFileDownloader.m; sourceTree = "<group>"; };
+		DBB9E48220A175BF00A1ABE2 /* RITLDownLoaderFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLDownLoaderFileManager.h; sourceTree = "<group>"; };
+		DBB9E48320A175BF00A1ABE2 /* RITLFileDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLFileDownloader.h; sourceTree = "<group>"; };
+		DBB9E48420A175BF00A1ABE2 /* RITLDownLoaderFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLDownLoaderFileManager.m; sourceTree = "<group>"; };
+		DBB9E48820A1761800A1ABE2 /* RITLFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLFilter.h; sourceTree = "<group>"; };
+		DBB9E48920A1761800A1ABE2 /* RITLFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLFilter.m; sourceTree = "<group>"; };
 		DBC73E1E1FE75D6500031EEE /* RITLSearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLSearchTextField.h; sourceTree = "<group>"; };
 		DBC73E1F1FE75D6500031EEE /* RITLSearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLSearchTextField.m; sourceTree = "<group>"; };
 		DBC73E201FE75D6500031EEE /* RITLSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLSearchView.h; sourceTree = "<group>"; };
@@ -387,6 +399,9 @@
 		DB8429811FCFEEE4004E85F7 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				DBB9E48720A1761800A1ABE2 /* Filter */,
+				DBB9E48020A175BF00A1ABE2 /* DownLoader */,
+				DBB9E47C20A1756300A1ABE2 /* Reachability */,
 				DB23A1FE20011F76004F37D2 /* RITLViewExtension.h */,
 				DB23A1FF20011F76004F37D2 /* RITLViewExtension.m */,
 				DB84298A1FCFEF0B004E85F7 /* RITLArchiverManager.h */,
@@ -401,6 +416,35 @@
 				DB8429901FCFEF1D004E85F7 /* RITLUtility.m */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		DBB9E47C20A1756300A1ABE2 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				DBB9E47E20A1756300A1ABE2 /* AppleReachability.h */,
+				DBB9E47D20A1756300A1ABE2 /* AppleReachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		DBB9E48020A175BF00A1ABE2 /* DownLoader */ = {
+			isa = PBXGroup;
+			children = (
+				DBB9E48220A175BF00A1ABE2 /* RITLDownLoaderFileManager.h */,
+				DBB9E48420A175BF00A1ABE2 /* RITLDownLoaderFileManager.m */,
+				DBB9E48320A175BF00A1ABE2 /* RITLFileDownloader.h */,
+				DBB9E48120A175BF00A1ABE2 /* RITLFileDownloader.m */,
+			);
+			path = DownLoader;
+			sourceTree = "<group>";
+		};
+		DBB9E48720A1761800A1ABE2 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				DBB9E48820A1761800A1ABE2 /* RITLFilter.h */,
+				DBB9E48920A1761800A1ABE2 /* RITLFilter.m */,
+			);
+			path = Filter;
 			sourceTree = "<group>";
 		};
 		DBC73E1D1FE75D6500031EEE /* SearchBar */ = {
@@ -443,7 +487,7 @@
 		DB41C8651FCF93FB0035AC4A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = YueWen;
 				TargetAttributes = {
 					DB41C86C1FCF93FB0035AC4A = {
@@ -551,7 +595,9 @@
 				DB41C9121FCFCE3A0035AC4A /* LLSegmentBarConfig.m in Sources */,
 				DB41C9241FCFD1370035AC4A /* RITLTitleButton.m in Sources */,
 				DB41C9221FCFD1370035AC4A /* RITLButton.m in Sources */,
+				DBB9E48620A175C000A1ABE2 /* RITLDownLoaderFileManager.m in Sources */,
 				DB41C9051FCFCB0E0035AC4A /* RITLWebScriptMessageHandler.m in Sources */,
+				DBB9E48A20A1761800A1ABE2 /* RITLFilter.m in Sources */,
 				DB84298C1FCFEF0B004E85F7 /* RITLRuntimeTool.m in Sources */,
 				DB41C8801FCF93FB0035AC4A /* main.m in Sources */,
 				DB41C8DA1FCF94840035AC4A /* CAGradientLayer+RITLGradientLayer.m in Sources */,
@@ -580,11 +626,13 @@
 				DB043A4C202AE1E300B2F1EA /* RITLImagePickerController.m in Sources */,
 				DB41C8E41FCF94840035AC4A /* UINavigationController+RITLExtension.m in Sources */,
 				DB41C8721FCF93FB0035AC4A /* AppDelegate.m in Sources */,
+				DBB9E47F20A1756300A1ABE2 /* AppleReachability.m in Sources */,
 				DBC73E261FE76A1700031EEE /* TableViewController.m in Sources */,
 				DB41C8E81FCF94840035AC4A /* UIView+RITLExtension.m in Sources */,
 				DB84298D1FCFEF0B004E85F7 /* RITLDictionaryProxy.m in Sources */,
 				DB722F5C1FFCC2ED00CCF52C /* NSObject+RITLMutable.m in Sources */,
 				DBC73E2C1FE79CD100031EEE /* RITLScrollPageViewTestController.m in Sources */,
+				DBB9E48520A175C000A1ABE2 /* RITLFileDownloader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,6 +664,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -623,6 +672,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -671,6 +721,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -678,6 +729,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

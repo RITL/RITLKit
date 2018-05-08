@@ -65,6 +65,9 @@
     self.view.ritl_view.add(button);
     
     
+    NSLog(@"size = %@",@(@"ritl_iphonex".ritl_image.ritl_sizeWithKB));
+    
+    
 //    UILabel *label = [UILabel new];
 //    label.text = @"小黑丹";
 //    label.backgroundColor = UIColor.yellowColor;
@@ -98,7 +101,7 @@
 
 - (void)dealloc
 {
-    NSInteger i = 0;
+//    NSInteger i = 0;
 }
 
 
