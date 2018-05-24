@@ -2,5 +2,6 @@ platform :ios, '8.0'
 #use_frameworks!个需要用到它，比如reactiveCocoa
 
 target 'RITLKitDemo' do
+ pod 'RITLViewFrame'
  pod 'Masonry'
 end

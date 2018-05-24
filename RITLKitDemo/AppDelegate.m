@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "RITLKit.h"
+#import <RITLViewFrame/UIView+RITLFrameChanged.h>
 
 @interface AppDelegate ()
 

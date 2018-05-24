@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "RITLKit.h"
+#import <RITLViewFrame/UIView+RITLFrameChanged.h>
 #import <Masonry.h>
 
 @interface ViewController ()

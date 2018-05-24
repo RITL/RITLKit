@@ -1,12 +1,20 @@
 PODS:
   - Masonry (1.1.0)
+  - RITLViewFrame (0.0.1)
 
 DEPENDENCIES:
   - Masonry
+  - RITLViewFrame
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+    - RITLViewFrame
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  RITLViewFrame: 4e38e6333e6b4691c1980c3fcda9ff4d08f0d2c8
 
-PODFILE CHECKSUM: 19d53438ca34b58e54acb918af2c8303d3f6db88
+PODFILE CHECKSUM: 1fb180917660b1b25228d17b9129cb475627f2fe
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.2
