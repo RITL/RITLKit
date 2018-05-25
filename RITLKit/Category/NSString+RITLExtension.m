@@ -70,6 +70,11 @@
 
 -(NSURL *)ritl_url
 {
+    if (self.ritl_containChinese) {
+        
+       return [NSURL URLWithString:[self stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
+    }
+    
     return [NSURL URLWithString:self];
 }
 
