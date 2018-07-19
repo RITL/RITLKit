@@ -49,6 +49,23 @@
 }
 
 
++ (void)removeDataWithUrl:(NSString *)url
+{
+    //获得完成存储的path
+    NSString *path = [self documentCompletePathForUrl:url];
+    
+    //获得URL
+    NSURL *toUrl = [NSURL fileURLWithPath:path];
+    
+    //移除
+    if ([self.fileManager fileExistsAtPath:toUrl]) {
+        
+        [self.fileManager removeItemAtURL:toUrl error:nil];
+    }
+}
+
+
+
 
 + (void)saveDataInCachePathWithData:(NSData *)data urlKey:(NSString *)url
 {
