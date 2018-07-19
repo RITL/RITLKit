@@ -59,11 +59,9 @@
     
     //移除
     if ([self.fileManager fileExistsAtPath:path]) {
-        
         [self.fileManager removeItemAtURL:toUrl error:nil];
     }
 }
-
 
 
 
