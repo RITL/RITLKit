@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'RITLKit'
-  s.version      = '0.3.9.2'
+  s.version      = '0.3.9.3'
   s.summary      = "The commonly Used Objective-C RITLKit."
 
   s.homepage     = "https://github.com/RITL/RITLKit"

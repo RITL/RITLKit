@@ -89,6 +89,7 @@
     return [self.completePath stringByAppendingPathComponent:path];
 }
 
+/// 缓存文件中的路径
 + (NSString *)documentCachePathForUrl:(NSString *)url
 {
      NSString *path = [self addingPercentEncoding:url];
