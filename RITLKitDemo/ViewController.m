@@ -90,6 +90,8 @@
 //        
 //    }];
     
+    NSLog(@"screenWidth = %@,screenHeight = %@",@(RITL_SCREEN_WIDTH),@(RITL_SCREEN_HEIGHT));
+    
     
 }
 

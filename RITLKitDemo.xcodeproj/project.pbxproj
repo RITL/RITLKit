@@ -58,6 +58,7 @@
 		DBC73E2C1FE79CD100031EEE /* RITLScrollPageViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC73E2B1FE79CD100031EEE /* RITLScrollPageViewTestController.m */; };
 		DBC73E2F1FE7A0EA00031EEE /* ritl_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC73E2D1FE7A0E900031EEE /* ritl_iphone.png */; };
 		DBC73E301FE7A0EA00031EEE /* ritl_iphonex.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC73E2E1FE7A0EA00031EEE /* ritl_iphonex.png */; };
+		DBDFF144214A0DB70032CC01 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBDFF143214A0DB70032CC01 /* Launch Screen.storyboard */; };
 		E0C844804EF041BE4AADA667 /* libPods-RITLKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C2315AEE5D22FD49407BF5 /* libPods-RITLKitDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -165,6 +166,7 @@
 		DBC73E2B1FE79CD100031EEE /* RITLScrollPageViewTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RITLScrollPageViewTestController.m; sourceTree = "<group>"; };
 		DBC73E2D1FE7A0E900031EEE /* ritl_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ritl_iphone.png; sourceTree = "<group>"; };
 		DBC73E2E1FE7A0EA00031EEE /* ritl_iphonex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ritl_iphonex.png; sourceTree = "<group>"; };
+		DBDFF143214A0DB70032CC01 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +263,7 @@
 				DBC73E251FE76A1700031EEE /* TableViewController.m */,
 				DBC73E2A1FE79CD100031EEE /* RITLScrollPageViewTestController.h */,
 				DBC73E2B1FE79CD100031EEE /* RITLScrollPageViewTestController.m */,
+				DBDFF143214A0DB70032CC01 /* Launch Screen.storyboard */,
 			);
 			path = RITLKitDemo;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				DBC73E2F1FE7A0EA00031EEE /* ritl_iphone.png in Resources */,
 				DB41C87A1FCF93FB0035AC4A /* Assets.xcassets in Resources */,
 				DBC73E301FE7A0EA00031EEE /* ritl_iphonex.png in Resources */,
+				DBDFF144214A0DB70032CC01 /* Launch Screen.storyboard in Resources */,
 				DB41C8781FCF93FB0035AC4A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -728,11 +732,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8S4NWFZC5J;
 				INFOPLIST_FILE = RITLKitDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yue.RITLKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -746,11 +749,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8S4NWFZC5J;
 				INFOPLIST_FILE = RITLKitDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yue.RITLKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

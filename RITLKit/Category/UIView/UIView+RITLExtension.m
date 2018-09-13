@@ -9,7 +9,7 @@
 #import "UIView+RITLExtension.h"
 #import "RITLUtility.h"
 #import <RITLViewFrame/UIView+RITLFrameChanged.h>
-#import <RITLRuntimeTool.h>
+#import "RITLRuntimeTool.h"
 #import <objc/runtime.h>
 
 @implementation UIView (RITLExtension)
