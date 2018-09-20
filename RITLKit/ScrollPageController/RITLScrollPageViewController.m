@@ -146,12 +146,21 @@
 
 /// 标志动画是否完成
 @property (nonatomic, assign)BOOL translateFinish;
+@property (nonatomic, strong, readwrite) UIView *bottomView;
 
 @end
 
 
 
 @implementation RITLScrollHorizontalPageViewController
+
+- (instancetype)init
+{
+    if (self = [super init]) {
+        self.bottomEdgeInsets = UIEdgeInsetsZero;
+    }
+    return self;
+}
 
 
 - (UIPageViewControllerNavigationOrientation)orientation
@@ -168,6 +177,10 @@
     if (!self.segmentBar.hidden) {
         
          [self.view addSubview:self.segmentBar];
+    }
+    
+    if (!self.bottomView.hidden) {
+        [self.view addSubview:self.bottomView];
     }
     
     self.translateFinish = true;
@@ -209,6 +222,9 @@
     [super viewDidLayoutSubviews];
     
     self.segmentBar.ritl_width = self.ritl_width;
+    self.bottomView.ritl_width = self.ritl_width - ABS(self.bottomEdgeInsets.left) - ABS(self.bottomEdgeInsets.right);
+    
+    self.bottomView.ritl_originY = self.segmentBar.hidden ? 0 : self.segmentBar.ritl_height;
     
     //选出底部视图
     UIView *scrollView = [[self.view.subviews ritl_filter:^BOOL(__kindof UIView * _Nonnull view) {
@@ -220,8 +236,9 @@
 //    BOOL hidden = self.segmentBar.hidden;
     
     //重置height
-    scrollView.ritl_originY = self.segmentBar.hidden ? 0 : self.segmentBar.ritl_height;
-    scrollView.ritl_height = self.ritl_height - (self.segmentBar.hidden ? 0 : self.segmentBar.ritl_height);
+    scrollView.ritl_originY = self.segmentBar.hidden ? 0 : (self.bottomView.hidden ?  self.segmentBar.ritl_height : self.segmentBar.ritl_height + self.bottomView.ritl_height);
+    
+    scrollView.ritl_height = self.ritl_height - (self.segmentBar.hidden ? 0 : (self.bottomView.hidden ?  self.segmentBar.ritl_height : self.segmentBar.ritl_height + self.bottomView.ritl_height));
 }
 
 
@@ -301,6 +318,16 @@
     }
     
     return _segmentBar;
+}
+
+- (UIView *)bottomView {
+    if (!_bottomView) {
+        _bottomView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, 1)];
+        _bottomView.backgroundColor = RITLColorSimpleFromIntRBG(245);
+        _bottomView.hidden = true;
+        
+    }
+    return _bottomView;
 }
 
 

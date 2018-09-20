@@ -37,25 +37,26 @@
     self.horizaonPageController = ({
        
         RITLScrollHorizontalPageViewController *viewController = [[RITLScrollHorizontalPageViewController alloc]init];
+        viewController.bottomView.hidden = false;
         
         viewController.contentViewControllers = @[({
             
             UIViewController *vc1 = [UIViewController new];
-            vc1.view.backgroundColor = UIColor.orangeColor;
+//            vc1.view.backgroundColor = UIColor.orangeColor;
             
             vc1;
         }),({
             
             
             UIViewController *vc1 = [UIViewController new];
-            vc1.view.backgroundColor = UIColor.redColor;
+//            vc1.view.backgroundColor = UIColor.redColor;
             
             vc1;
             
         }),({
             
             UIViewController *vc1 = [UIViewController new];
-            vc1.view.backgroundColor = UIColor.greenColor;
+//            vc1.view.backgroundColor = UIColor.greenColor;
             
             vc1;
         })];
