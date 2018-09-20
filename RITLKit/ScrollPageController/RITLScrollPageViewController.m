@@ -175,7 +175,6 @@
     [super viewDidLoad];
     
     if (!self.segmentBar.hidden) {
-        
          [self.view addSubview:self.segmentBar];
     }
     
@@ -321,7 +320,9 @@
 }
 
 - (UIView *)bottomView {
+    
     if (!_bottomView) {
+        
         _bottomView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, 1)];
         _bottomView.backgroundColor = RITLColorSimpleFromIntRBG(245);
         _bottomView.hidden = true;
