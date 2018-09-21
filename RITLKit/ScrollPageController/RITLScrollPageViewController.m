@@ -178,9 +178,7 @@
          [self.view addSubview:self.segmentBar];
     }
     
-    if (!self.bottomView.hidden) {
-        [self.view addSubview:self.bottomView];
-    }
+    [self.view addSubview:self.bottomView];
     
     self.translateFinish = true;
     
