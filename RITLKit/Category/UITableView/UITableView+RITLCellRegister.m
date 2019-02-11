@@ -10,14 +10,24 @@
 
 @implementation UITableView (RITLCellRegister)
 
-
 /// 注册cell
-- (void)ritl_registeCellWithIdentidiers:(NSSet *)identifiers
+- (void)ritl_registeCellWithIdentifiers:(NSSet *)identifiers
 {
-    for (NSString * identifier in identifiers) {
-    
-        [self registerClass:NSClassFromString(identifier) forCellReuseIdentifier:identifier];
+    for (id identifier in identifiers) {
+        if ([identifier isKindOfClass:NSString.class]) {
+            [self registerClass:NSClassFromString(identifier) forCellReuseIdentifier:identifier];
+        }
     }
+}
+
+- (void)ritl_registeCellWithClasses:(NSSet <Class>*)classes {
+    for (Class class in classes) {
+        [self registerClass:class forCellReuseIdentifier:NSStringFromClass(class)];
+    }
+}
+
+- (void)ritl_registeCellWithIdentidiers:(NSSet <NSString *> *)identifiers {
+    [self ritl_registeCellWithIdentifiers:identifiers];
 }
 
 
@@ -45,7 +55,6 @@
     UITableViewCell *cell = [self dequeueReusableCellWithIdentifier:identifier];
     
     if (!cell) {
-        
         cell =  [[cellClass alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
@@ -58,9 +67,7 @@
     UITableViewCell *cell = [self dequeueReusableCellWithIdentifier:identifier];
     
     if (!cell) {
-        
         cell =  [[cellClass alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-        
         if (handler) {  handler(cell); }
     }
     

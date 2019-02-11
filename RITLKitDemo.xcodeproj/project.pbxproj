@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB043A4C202AE1E300B2F1EA /* RITLImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB043A4A202AE1E300B2F1EA /* RITLImagePickerController.m */; };
+		DB0DFD7F22110BB20091122B /* RITLButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0DFD7E22110BB20091122B /* RITLButtonItem.m */; };
 		DB2AE0A32022A8A2009E63FF /* UIButton+RITLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2AE0A22022A8A2009E63FF /* UIButton+RITLKit.m */; };
 		DB2AE0A62022A8E3009E63FF /* UITableView+RITLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2AE0A42022A8E3009E63FF /* UITableView+RITLExtension.m */; };
 		DB41C8721FCF93FB0035AC4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C8711FCF93FB0035AC4A /* AppDelegate.m */; };
@@ -38,7 +39,7 @@
 		DB41C9141FCFCE3A0035AC4A /* UIView+LLSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C9101FCFCE3A0035AC4A /* UIView+LLSegmentBar.m */; };
 		DB41C9181FCFCE5A0035AC4A /* RITLScrollPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C9171FCFCE5A0035AC4A /* RITLScrollPageViewController.m */; };
 		DB41C9221FCFD1370035AC4A /* RITLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C91D1FCFD1370035AC4A /* RITLButton.m */; };
-		DB41C9231FCFD1370035AC4A /* RITLButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C91F1FCFD1370035AC4A /* RITLButtonItem.m */; };
+		DB41C9231FCFD1370035AC4A /* RITLItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C91F1FCFD1370035AC4A /* RITLItemButton.m */; };
 		DB41C9241FCFD1370035AC4A /* RITLTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C9211FCFD1370035AC4A /* RITLTitleButton.m */; };
 		DB660C7D1FECF11D00991D1D /* UILabel+RITLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB660C7C1FECF11D00991D1D /* UILabel+RITLExtension.m */; };
 		DB722F5C1FFCC2ED00CCF52C /* NSObject+RITLMutable.m in Sources */ = {isa = PBXBuildFile; fileRef = DB722F5A1FFCC2ED00CCF52C /* NSObject+RITLMutable.m */; };
@@ -68,6 +69,8 @@
 		BD51B089C949D25D17060DE0 /* Pods-RITLKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RITLKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RITLKitDemo/Pods-RITLKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DB043A4A202AE1E300B2F1EA /* RITLImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLImagePickerController.m; sourceTree = "<group>"; };
 		DB043A4B202AE1E300B2F1EA /* RITLImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLImagePickerController.h; sourceTree = "<group>"; };
+		DB0DFD7D22110BB10091122B /* RITLButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLButtonItem.h; sourceTree = "<group>"; };
+		DB0DFD7E22110BB20091122B /* RITLButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLButtonItem.m; sourceTree = "<group>"; };
 		DB2AE0A12022A8A2009E63FF /* UIButton+RITLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+RITLKit.h"; sourceTree = "<group>"; };
 		DB2AE0A22022A8A2009E63FF /* UIButton+RITLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RITLKit.m"; sourceTree = "<group>"; };
 		DB2AE0A42022A8E3009E63FF /* UITableView+RITLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+RITLExtension.m"; sourceTree = "<group>"; };
@@ -128,8 +131,8 @@
 		DB41C9171FCFCE5A0035AC4A /* RITLScrollPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLScrollPageViewController.m; sourceTree = "<group>"; };
 		DB41C91C1FCFD1370035AC4A /* RITLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLButton.h; sourceTree = "<group>"; };
 		DB41C91D1FCFD1370035AC4A /* RITLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLButton.m; sourceTree = "<group>"; };
-		DB41C91E1FCFD1370035AC4A /* RITLButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLButtonItem.h; sourceTree = "<group>"; };
-		DB41C91F1FCFD1370035AC4A /* RITLButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLButtonItem.m; sourceTree = "<group>"; };
+		DB41C91E1FCFD1370035AC4A /* RITLItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLItemButton.h; sourceTree = "<group>"; };
+		DB41C91F1FCFD1370035AC4A /* RITLItemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLItemButton.m; sourceTree = "<group>"; };
 		DB41C9201FCFD1370035AC4A /* RITLTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLTitleButton.h; sourceTree = "<group>"; };
 		DB41C9211FCFD1370035AC4A /* RITLTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLTitleButton.m; sourceTree = "<group>"; };
 		DB660C7B1FECF11D00991D1D /* UILabel+RITLExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+RITLExtension.h"; sourceTree = "<group>"; };
@@ -207,6 +210,21 @@
 			path = ImagePicker;
 			sourceTree = "<group>";
 		};
+		DB0DFD7C2211005F0091122B /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				DB0DFD7D22110BB10091122B /* RITLButtonItem.h */,
+				DB0DFD7E22110BB20091122B /* RITLButtonItem.m */,
+				DB41C8931FCF94840035AC4A /* NSObject+RITLExtension.h */,
+				DB41C8941FCF94840035AC4A /* NSObject+RITLExtension.m */,
+				DB41C91C1FCFD1370035AC4A /* RITLButton.h */,
+				DB41C91D1FCFD1370035AC4A /* RITLButton.m */,
+				DB41C9201FCFD1370035AC4A /* RITLTitleButton.h */,
+				DB41C9211FCFD1370035AC4A /* RITLTitleButton.m */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
 		DB2AE0A72022AA78009E63FF /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +296,7 @@
 				DB41C9151FCFCE5A0035AC4A /* ScrollPageController */,
 				DB41C8871FCF94840035AC4A /* Category */,
 				DB41C8FD1FCFCB0E0035AC4A /* Web */,
+				DB0DFD7C2211005F0091122B /* Deprecated */,
 			);
 			path = RITLKit;
 			sourceTree = "<group>";
@@ -299,8 +318,6 @@
 				DB41C88E1FCF94840035AC4A /* NSDate+RITLExtension.m */,
 				DB41C88F1FCF94840035AC4A /* NSDictionary+RITLExtension.h */,
 				DB41C8901FCF94840035AC4A /* NSDictionary+RITLExtension.m */,
-				DB41C8931FCF94840035AC4A /* NSObject+RITLExtension.h */,
-				DB41C8941FCF94840035AC4A /* NSObject+RITLExtension.m */,
 				DB41C8951FCF94840035AC4A /* NSString+RITLExtension.h */,
 				DB41C8961FCF94840035AC4A /* NSString+RITLExtension.m */,
 				DB41C8971FCF94840035AC4A /* UIColor+RITLExtension.h */,
@@ -379,12 +396,8 @@
 		DB41C91B1FCFD1370035AC4A /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				DB41C91C1FCFD1370035AC4A /* RITLButton.h */,
-				DB41C91D1FCFD1370035AC4A /* RITLButton.m */,
-				DB41C91E1FCFD1370035AC4A /* RITLButtonItem.h */,
-				DB41C91F1FCFD1370035AC4A /* RITLButtonItem.m */,
-				DB41C9201FCFD1370035AC4A /* RITLTitleButton.h */,
-				DB41C9211FCFD1370035AC4A /* RITLTitleButton.m */,
+				DB41C91E1FCFD1370035AC4A /* RITLItemButton.h */,
+				DB41C91F1FCFD1370035AC4A /* RITLItemButton.m */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -432,18 +445,18 @@
 		DBB9E48B20A17BAD00A1ABE2 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				DBB9E49420A17BAD00A1ABE2 /* RITLDictionaryProxy.h */,
 				DBB9E48C20A17BAD00A1ABE2 /* RITLDictionaryProxy.m */,
 				DBB9E48D20A17BAD00A1ABE2 /* RITLArchiverManager.h */,
-				DBB9E48E20A17BAD00A1ABE2 /* RITLViewExtension.m */,
-				DBB9E48F20A17BAD00A1ABE2 /* RITLRuntimeTool.h */,
-				DBB9E49020A17BAD00A1ABE2 /* RITLTimer.m */,
-				DBB9E49120A17BAD00A1ABE2 /* RITLUtility.m */,
-				DBB9E49220A17BAD00A1ABE2 /* RITLViewExtension.h */,
 				DBB9E49320A17BAD00A1ABE2 /* RITLArchiverManager.m */,
-				DBB9E49420A17BAD00A1ABE2 /* RITLDictionaryProxy.h */,
+				DBB9E49220A17BAD00A1ABE2 /* RITLViewExtension.h */,
+				DBB9E48E20A17BAD00A1ABE2 /* RITLViewExtension.m */,
 				DBB9E49520A17BAD00A1ABE2 /* RITLTimer.h */,
-				DBB9E49620A17BAD00A1ABE2 /* RITLRuntimeTool.m */,
+				DBB9E49020A17BAD00A1ABE2 /* RITLTimer.m */,
 				DBB9E49720A17BAD00A1ABE2 /* RITLUtility.h */,
+				DBB9E49120A17BAD00A1ABE2 /* RITLUtility.m */,
+				DBB9E48F20A17BAD00A1ABE2 /* RITLRuntimeTool.h */,
+				DBB9E49620A17BAD00A1ABE2 /* RITLRuntimeTool.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -571,6 +584,7 @@
 				DB41C8801FCF93FB0035AC4A /* main.m in Sources */,
 				DB41C8DA1FCF94840035AC4A /* CAGradientLayer+RITLGradientLayer.m in Sources */,
 				DB2AE0A32022A8A2009E63FF /* UIButton+RITLKit.m in Sources */,
+				DB0DFD7F22110BB20091122B /* RITLButtonItem.m in Sources */,
 				DB41C8E31FCF94840035AC4A /* UIImage+RITLExtension.m in Sources */,
 				DBC73E221FE75D6500031EEE /* RITLSearchTextField.m in Sources */,
 				DBB9E49A20A17BAD00A1ABE2 /* RITLTimer.m in Sources */,
@@ -579,7 +593,7 @@
 				DB41C9181FCFCE5A0035AC4A /* RITLScrollPageViewController.m in Sources */,
 				DB41C8DC1FCF94840035AC4A /* NSDate+RITLExtension.m in Sources */,
 				DB41C8E61FCF94840035AC4A /* UITableView+RITLCellRegister.m in Sources */,
-				DB41C9231FCFD1370035AC4A /* RITLButtonItem.m in Sources */,
+				DB41C9231FCFD1370035AC4A /* RITLItemButton.m in Sources */,
 				DB41C8DD1FCF94840035AC4A /* NSDictionary+RITLExtension.m in Sources */,
 				DB41C8E11FCF94840035AC4A /* UIColor+RITLExtension.m in Sources */,
 				DB41C9131FCFCE3A0035AC4A /* LLSegmentBarVC.m in Sources */,

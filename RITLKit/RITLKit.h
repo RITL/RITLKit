@@ -22,7 +22,7 @@
 #import "AppleReachability.h"
 
 
-#import "RITLButtonItem.h"
+#import "RITLItemButton.h"
 #import "RITLSearchView.h"
 #import "RITLSearchTextField.h"
 #import "RITLImagePickerController.h"

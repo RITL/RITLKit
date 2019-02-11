@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (RITLExtension)
+NS_CLASS_DEPRECATED_IOS(2_0, 12_0,"This category is not useful! Maybe you can use a scope") @interface NSObject (RITLExtension)
 
 /// 便利初始化方法
 + (instancetype)ritl_object:(void(^)(__kindof id object))initialHandler;

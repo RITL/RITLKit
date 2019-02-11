@@ -118,17 +118,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @interface RITLScrollPageViewController (UIPageViewControllerDataSource) <UIPageViewControllerDataSource>
-
-
-
 @end
 
 
 
 @interface RITLScrollPageViewController (UIPageViewControllerDelegate) <UIPageViewControllerDelegate>
-
-
-
 @end
 
 

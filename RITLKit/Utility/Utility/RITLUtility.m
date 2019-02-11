@@ -94,23 +94,31 @@ void RITLCall(NSString *telephoneNumber)
 }
 
 
-UIFont *RITLUtilityFont(NSString *fontName,CGFloat size)
-{
+
+
+UIFont *RITLUtilityFont(NSString *fontName,CGFloat size){
     return [RITLUtility checkWhetherExistFontWithName:fontName AndSize:size];
 }
 
-UIFont *RITLRegularFont(CGFloat size)
-{
+
+UIFont *RITLLightFont(CGFloat size) {
+    return RITLUtilityFont(RITLFontPingFangSC_Light, size);
+}
+
+
+UIFont *RITLRegularFont(CGFloat size){
     return RITLUtilityFont(RITLFontPingFangSC_Regular, size);
 }
 
-UIFont *RITLMediumFont(CGFloat size)
-{
+UIFont *RITLMediumFont(CGFloat size){
     return RITLUtilityFont(RITLFontPingFangSC_Medium, size);
 }
 
-UIFont *RITLBoldFont(CGFloat size)
-{
+UIFont *RITLBoldFont(CGFloat size){
     return RITLUtilityFont(RITLFontPingFangSC_Bold, size);
+}
+
+UIFont *RITLSemiboldFont(CGFloat size) {
+    return RITLUtilityFont(RITLFontPingFangSC_Semibold, size);
 }
 
