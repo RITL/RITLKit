@@ -23,6 +23,7 @@
 
 
 #import "RITLItemButton.h"
+
 #import "RITLSearchView.h"
 #import "RITLSearchTextField.h"
 #import "RITLImagePickerController.h"
@@ -51,5 +52,9 @@
 #import "RITLWebViewController.h"
 #import "RITLScriptMessageHandler.h"
 #import "RITLWebScriptMessageHandler.h"
+
+
+//TODO: Deprecated
+#import "RITLButtonItem.h"
 
 #endif /* RITLTool_h */
