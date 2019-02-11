@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'RITLKit'
-  s.version      = '1.2.1'
+  s.version      = '1.3.0'
   s.summary      = "The commonly Used Objective-C RITLKit."
 
   s.homepage     = "https://github.com/RITL/RITLKit"
@@ -64,6 +64,12 @@ Pod::Spec.new do |s|
 
   s.subspec 'Web' do |ss|
     ss.source_files = 'RITLKit/Web/**/*.{h,m}'
+    ss.dependency 'RITLKit/Category'
+    ss.dependency 'RITLKit/Utility'
+  end
+
+   s.subspec 'Deprecated' do |ss|
+    ss.source_files = 'RITLKit/Deprecated/**/*.{h,m}'
     ss.dependency 'RITLKit/Category'
     ss.dependency 'RITLKit/Utility'
   end

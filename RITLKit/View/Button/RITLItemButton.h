@@ -62,6 +62,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-typedef RITLItemButton RITLTabBarItem;
+//typedef RITLItemButton RITLTabBarItem;
 
 NS_ASSUME_NONNULL_END
