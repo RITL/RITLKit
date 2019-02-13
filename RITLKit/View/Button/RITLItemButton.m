@@ -50,7 +50,12 @@
 
 -(void)initializeItem
 {
-
+    self.autoAdjustImageView = true;
+    self.backgroundColor = [UIColor whiteColor];
+    
+    [self addSubview:self.imageView];
+    [self addSubview:self.titleLabel];
+    
     self.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:10];
     self.titleLabel.backgroundColor = [UIColor whiteColor];
     self.titleLabel.clipsToBounds = false;

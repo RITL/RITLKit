@@ -23,7 +23,6 @@
 
 
 #import "RITLItemButton.h"
-
 #import "RITLSearchView.h"
 #import "RITLSearchTextField.h"
 #import "RITLImagePickerController.h"
