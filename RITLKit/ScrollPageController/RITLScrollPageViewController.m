@@ -190,7 +190,7 @@
         self.popPanGestureRecognizer = self.navigationController.interactivePopGestureRecognizer;
     }
     
-    else if (self.popPanGestureRecognizer  && self.parentViewController.navigationController) {
+    else if (!self.popPanGestureRecognizer  && self.parentViewController.navigationController) {
         self.popPanGestureRecognizer = self.parentViewController.navigationController.interactivePopGestureRecognizer;
     }
     
