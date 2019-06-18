@@ -49,7 +49,7 @@
 //检测是否是手机号码
 + (BOOL)isStringMobileNumber:(NSString *)mobileNum
 {
-    NSString * mobile = @"^1[34578]\\d{9}$";
+    NSString * mobile = @"0?(13|14|15|16|17|18|19)[0-9]{9}";
     NSPredicate *regextestmobile = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", mobile];
     if ([regextestmobile evaluateWithObject:mobileNum] == YES) {
         return YES;

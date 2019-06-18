@@ -37,7 +37,6 @@
 #import "UIColor+RITLExtension.h"
 #import "UIImage+RITLExtension.h"
 #import "UIButton+RITLKit.h"
-#import "NSObject+RITLExtension.h"
 #import "NSString+RITLExtension.h"
 #import "UIControl+RITLBlockButton.h"
 #import "NSDictionary+RITLExtension.h"
@@ -54,6 +53,6 @@
 
 
 //TODO: Deprecated
-#import "RITLButtonItem.h"
+//#import "RITLButtonItem.h"
 
 #endif /* RITLTool_h */
