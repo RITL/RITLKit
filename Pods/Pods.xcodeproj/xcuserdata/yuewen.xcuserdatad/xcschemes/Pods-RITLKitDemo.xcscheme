@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9F9DBA8A27CCD9B352C88ABE53D5BD54"
+               BlueprintIdentifier = "DDE435F10A1C9E75038EEFD2CC6C7AC7"
+               BuildableName = "libPods-RITLKitDemo.a"
                BlueprintName = "Pods-RITLKitDemo"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPods-RITLKitDemo.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

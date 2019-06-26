@@ -35,12 +35,10 @@
 - (void)ritl_registerClasses:(NSArray<Class> *)cellClasses forCellReuseIdentifiers:(NSArray<NSString *> *)identifiers
 {
     if (cellClasses.count != identifiers.count) {
-        
         return;
     }
     
     for (NSInteger i = 0; i < cellClasses.count; i++) {
-        
         [self registerClass:cellClasses[i] forCellReuseIdentifier:identifiers[i]];
     }
 }
