@@ -67,11 +67,4 @@ Pod::Spec.new do |s|
     ss.dependency 'RITLKit/Category'
     ss.dependency 'RITLKit/Utility'
   end
-
-   s.subspec 'Deprecated' do |ss|
-    ss.source_files = 'RITLKit/Deprecated/**/*.{h,m}'
-    ss.dependency 'RITLKit/Category'
-    ss.dependency 'RITLKit/Utility'
-  end
-
 end

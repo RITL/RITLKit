@@ -18,10 +18,12 @@ static NSString const * ConstTextField;
 
 /// 修改占位符的字体颜色
 - (void)ritl_setPlaceholderColor:(UIColor *)color {
+    if (UIDevice.currentDevice.systemVersion.floatValue >= 13.0) { return; }
     [self setValue:color forKeyPath:@"_placeholderLabel.textColor"];
 }
 /// 设置占位符的字体大小
 - (void)ritl_setPlaceholderFont:(UIFont *)font {
+    if (UIDevice.currentDevice.systemVersion.floatValue >= 13.0) { return; }
     id object = [self valueForKey:@"placeholderLabel"];
     [object setValue:font forKey:@"font"];
 }
@@ -132,6 +134,7 @@ static NSString const * ConstTextField;
 
 -(void)ritl_setTextFieldPlaceHolderColor:(UIColor *)color
 {
+//    if (UIDevice.currentDevice.systemVersion.floatValue >= 13.0) { return; }
     [self.customTextField setValue:color forKeyPath:@"_placeholderLabel.textColor"];
 }
 
@@ -139,6 +142,7 @@ static NSString const * ConstTextField;
 
 - (void)ritl_setPlaceHolderFont:(UIFont *)font
 {
+//    if (UIDevice.currentDevice.systemVersion.floatValue >= 13.0) { return; }
     id object = [self.customTextField valueForKey:@"placeholderLabel"];
     [object setValue:font forKey:@"font"];
 }

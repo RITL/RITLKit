@@ -10,16 +10,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UITextField (RITLCustomColor)
+NS_DEPRECATED_IOS(2_0, 13_0) @interface UITextField (RITLCustomColor)
 
 /// 修改占位符的字体颜色
-- (void)ritl_setPlaceholderColor:(UIColor *)color;
+- (void)ritl_setPlaceholderColor:(UIColor *)color NS_DEPRECATED_IOS(2_0, 13_0,"Use attributePlaceholder instead.");
 /// 设置占位符的字体大小
-- (void)ritl_setPlaceholderFont:(UIFont *)font;
+- (void)ritl_setPlaceholderFont:(UIFont *)font NS_DEPRECATED_IOS(2_0, 13_0,"Use attributePlaceholder instead.");
 
 @end
 
-@interface UISearchBar (RITLCustomColor)
+NS_DEPRECATED_IOS(2_0, 13_0) @interface UISearchBar (RITLCustomColor)
 
 /// 设置背景颜色
 - (void)ritl_setBackgroupColor:(UIColor *)color;
