@@ -24,7 +24,6 @@
 		DB41C8E21FCF94840035AC4A /* UIControl+RITLBlockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C89A1FCF94840035AC4A /* UIControl+RITLBlockButton.m */; };
 		DB41C8E31FCF94840035AC4A /* UIImage+RITLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C89C1FCF94840035AC4A /* UIImage+RITLExtension.m */; };
 		DB41C8E41FCF94840035AC4A /* UINavigationController+RITLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C89E1FCF94840035AC4A /* UINavigationController+RITLExtension.m */; };
-		DB41C8E51FCF94840035AC4A /* UISearchBar+RITLCustomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C8A01FCF94840035AC4A /* UISearchBar+RITLCustomColor.m */; };
 		DB41C8E61FCF94840035AC4A /* UITableView+RITLCellRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C8A21FCF94840035AC4A /* UITableView+RITLCellRegister.m */; };
 		DB41C8E81FCF94840035AC4A /* UIView+RITLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C8A61FCF94840035AC4A /* UIView+RITLExtension.m */; };
 		DB41C8EA1FCF94840035AC4A /* UIViewController+RITLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41C8AA1FCF94840035AC4A /* UIViewController+RITLExtension.m */; };
@@ -96,8 +95,6 @@
 		DB41C89C1FCF94840035AC4A /* UIImage+RITLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RITLExtension.m"; sourceTree = "<group>"; };
 		DB41C89D1FCF94840035AC4A /* UINavigationController+RITLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+RITLExtension.h"; sourceTree = "<group>"; };
 		DB41C89E1FCF94840035AC4A /* UINavigationController+RITLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+RITLExtension.m"; sourceTree = "<group>"; };
-		DB41C89F1FCF94840035AC4A /* UISearchBar+RITLCustomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+RITLCustomColor.h"; sourceTree = "<group>"; };
-		DB41C8A01FCF94840035AC4A /* UISearchBar+RITLCustomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+RITLCustomColor.m"; sourceTree = "<group>"; };
 		DB41C8A11FCF94840035AC4A /* UITableView+RITLCellRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+RITLCellRegister.h"; sourceTree = "<group>"; };
 		DB41C8A21FCF94840035AC4A /* UITableView+RITLCellRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+RITLCellRegister.m"; sourceTree = "<group>"; };
 		DB41C8A51FCF94840035AC4A /* UIView+RITLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RITLExtension.h"; sourceTree = "<group>"; };
@@ -300,8 +297,6 @@
 				DB41C89C1FCF94840035AC4A /* UIImage+RITLExtension.m */,
 				DB41C89D1FCF94840035AC4A /* UINavigationController+RITLExtension.h */,
 				DB41C89E1FCF94840035AC4A /* UINavigationController+RITLExtension.m */,
-				DB41C89F1FCF94840035AC4A /* UISearchBar+RITLCustomColor.h */,
-				DB41C8A01FCF94840035AC4A /* UISearchBar+RITLCustomColor.m */,
 				DB41C8A91FCF94840035AC4A /* UIViewController+RITLExtension.h */,
 				DB41C8AA1FCF94840035AC4A /* UIViewController+RITLExtension.m */,
 				DB660C7B1FECF11D00991D1D /* UILabel+RITLExtension.h */,
@@ -545,7 +540,6 @@
 				DB41C8EA1FCF94840035AC4A /* UIViewController+RITLExtension.m in Sources */,
 				DB41C8751FCF93FB0035AC4A /* ViewController.m in Sources */,
 				DBC73E231FE75D6500031EEE /* RITLSearchView.m in Sources */,
-				DB41C8E51FCF94840035AC4A /* UISearchBar+RITLCustomColor.m in Sources */,
 				DB41C9121FCFCE3A0035AC4A /* LLSegmentBarConfig.m in Sources */,
 				DBB9E49C20A17BAD00A1ABE2 /* RITLArchiverManager.m in Sources */,
 				DBB9E48620A175C000A1ABE2 /* RITLDownLoaderFileManager.m in Sources */,
