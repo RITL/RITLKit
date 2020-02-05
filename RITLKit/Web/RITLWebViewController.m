@@ -198,6 +198,23 @@
         [self.webView removeObserver:self forKeyPath:@"canGoBack" context:@"webView_canGoBack"];
         [self.webView removeObserver:self forKeyPath:@"title" context:@"webView_title"];
         [self.progressView removeObserver:self forKeyPath:@"hidden"];
+        
+        //移除所有的RITLScriptMessageHandler
+        
+        // 如果存在交互
+        if (self.scriptMessageHandlers) {
+            //添加
+            for (id <WKScriptMessageHandler,RITLScriptMessageHandler> handler in self.scriptMessageHandlers) {
+                [self.webView.configuration.userContentController removeScriptMessageHandlerForName:handler.name];
+            }
+        }
+        
+        //进行name注册
+        if (self.messageHanderNames) {
+            for (NSString *name in self.messageHanderNames) {
+                [self.webView.configuration.userContentController removeScriptMessageHandlerForName:name];
+            }
+        }
     }
 }
 
