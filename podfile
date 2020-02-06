@@ -1,3 +1,6 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+
 platform :ios, '8.0'
 #use_frameworks!个需要用到它，比如reactiveCocoa
 inhibit_all_warnings!
