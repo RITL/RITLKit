@@ -61,13 +61,12 @@
 		0AC922FCF7649A49AC7BF46508F756D6 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
 		0BA10C0871BBDFD1C5786F71EF3C1ABE /* Pods-RITLKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RITLKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		1DCE9D25CBA2A35DA63645A1693DD88B /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
-		1FFED36A657123030ABB700256D73F15 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		21516954D5F93A8276E38AD5B4BEEF1E /* libPods-RITLKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-RITLKitDemo.a"; path = "libPods-RITLKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23ECD6231224F6BDC5ADC525E48E127C /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
 		244AEA7A14DDC0FD8DFC0D5B131D1AF3 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		24BCA07788729086302F68644F554552 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
 		26E30598B3A11B49A15E37F7884C24A9 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		27FF71CDA3CCFD1F1462D44A00A12C76 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
-		2A6521083173BD52CE5AB2D31EDEAA2C /* libRITLViewFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRITLViewFrame.a; path = libRITLViewFrame.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE4BE2114CBAFF9F8B3C308695596CF /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
 		30543B5B7C0BF25B22B74FD974A2B255 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		321A25511BF87A87254C39880C13D5F9 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
@@ -77,7 +76,6 @@
 		60D71A0AC88EBFC26CD9BBCF83B36F26 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		678960C28BC0176C1E36E5FB7FB188CE /* Pods-RITLKitDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RITLKitDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		700168C8E097C5D78347DA2261F09AD4 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
-		70C270E9303633D57C50038091AAB7A6 /* libPods-RITLKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-RITLKitDemo.a"; path = "libPods-RITLKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71CBC296CE21A62A18F10871EB202182 /* UIView+RITLFrameChanged.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RITLFrameChanged.h"; path = "RITLViewFrame/UIView+RITLFrameChanged.h"; sourceTree = "<group>"; };
 		720BDDFA43E2C0FEC0C9431ADA6B09B1 /* Pods-RITLKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RITLKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		7DF4440DE0BEC3C1C0D53AF0B42FC9C7 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
@@ -93,9 +91,11 @@
 		C75844B40DEDF309910459E5F1584CB9 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
 		C954C7AC1C7D4853D659788D5CC32415 /* UIView+RITLFrameChanged.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RITLFrameChanged.m"; path = "RITLViewFrame/UIView+RITLFrameChanged.m"; sourceTree = "<group>"; };
 		C9A81B5A981C9A5EF5F0E8838E9858F6 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		D08402F6EDFAA0EFCB3570973576F5EA /* libRITLViewFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRITLViewFrame.a; path = libRITLViewFrame.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA82C88254284D337A125322D66CE43F /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
 		ECEC6E18ED68A8641540D454EA5849F0 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		ED67E1C6D03631BE2F61406BDDF4F5F1 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		F1C193A25F55A505CFD8166BA70898B7 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2793DBA32DD392B4F5DB290B4CB78E0 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
 		FB2AE23F41D0F4E2DF0AA1FAF122CC3F /* RITLViewFrame-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RITLViewFrame-prefix.pch"; sourceTree = "<group>"; };
 		FCEE65795383281495F76AEF85D91380 /* RITLViewFrame.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RITLViewFrame.xcconfig; sourceTree = "<group>"; };
@@ -129,9 +129,9 @@
 		05B1B37A4DBAF096CF7E7CD6E00E9008 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1FFED36A657123030ABB700256D73F15 /* libMasonry.a */,
-				70C270E9303633D57C50038091AAB7A6 /* libPods-RITLKitDemo.a */,
-				2A6521083173BD52CE5AB2D31EDEAA2C /* libRITLViewFrame.a */,
+				F1C193A25F55A505CFD8166BA70898B7 /* libMasonry.a */,
+				21516954D5F93A8276E38AD5B4BEEF1E /* libPods-RITLKitDemo.a */,
+				D08402F6EDFAA0EFCB3570973576F5EA /* libRITLViewFrame.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -308,7 +308,7 @@
 			);
 			name = Masonry;
 			productName = Masonry;
-			productReference = 1FFED36A657123030ABB700256D73F15 /* libMasonry.a */;
+			productReference = F1C193A25F55A505CFD8166BA70898B7 /* libMasonry.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		7EE18B3869F3DDCFD2CE02D6C9EC12F7 /* RITLViewFrame */ = {
@@ -325,7 +325,7 @@
 			);
 			name = RITLViewFrame;
 			productName = RITLViewFrame;
-			productReference = 2A6521083173BD52CE5AB2D31EDEAA2C /* libRITLViewFrame.a */;
+			productReference = D08402F6EDFAA0EFCB3570973576F5EA /* libRITLViewFrame.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		DDE435F10A1C9E75038EEFD2CC6C7AC7 /* Pods-RITLKitDemo */ = {
@@ -344,7 +344,7 @@
 			);
 			name = "Pods-RITLKitDemo";
 			productName = "Pods-RITLKitDemo";
-			productReference = 70C270E9303633D57C50038091AAB7A6 /* libPods-RITLKitDemo.a */;
+			productReference = 21516954D5F93A8276E38AD5B4BEEF1E /* libPods-RITLKitDemo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */

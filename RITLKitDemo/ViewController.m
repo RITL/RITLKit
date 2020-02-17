@@ -102,15 +102,18 @@
     
     NSLog(@"screenWidth = %@,screenHeight = %@",@(RITL_SCREEN_WIDTH),@(RITL_SCREEN_HEIGHT));
     
-    [self.navigationController pushViewController:({
-        
-        RITLWebViewController *webView =  RITLWebViewController.new;
-//        webView.url = @" https://fopenapixgpre.cnsuning.com/auth?targetUrl=http%3A%2F%2Flcyxgpre.cnsuning.com%2Flcdcs%2FlcdcsIndex%2Findex.htm%3Fmerchant_no%3D70056734%26sign%3DP4VRmP2M3zaet4jsbtsZ5lSS1Lzp0jtascxS8Npskb_8f_Xg9nYqp8-pzGEaYFZG8GaTfZYZOWbUlglD7FALYsXWPmMn29n-0xyhdjBrl9kx0rLJgQ-2ZxNYKeUZRDDBLvAWl_cMAUgkZRgzB8mH78-sl6Ctlgzg8LCuGqbWdNM%26user_no%3D0000000001118265812%26timestamp%3D20190801091650&ticket=79*ST14F1F2036D23355EEE2500EFFFE97916";
-        webView.url = @"https://www.baidu.com";
-        
-        webView;
-        
-    }) animated:true];
+//    [self.navigationController pushViewController:({
+//
+//        RITLWebViewController *webView =  RITLWebViewController.new;
+////        webView.url = @" https://fopenapixgpre.cnsuning.com/auth?targetUrl=http%3A%2F%2Flcyxgpre.cnsuning.com%2Flcdcs%2FlcdcsIndex%2Findex.htm%3Fmerchant_no%3D70056734%26sign%3DP4VRmP2M3zaet4jsbtsZ5lSS1Lzp0jtascxS8Npskb_8f_Xg9nYqp8-pzGEaYFZG8GaTfZYZOWbUlglD7FALYsXWPmMn29n-0xyhdjBrl9kx0rLJgQ-2ZxNYKeUZRDDBLvAWl_cMAUgkZRgzB8mH78-sl6Ctlgzg8LCuGqbWdNM%26user_no%3D0000000001118265812%26timestamp%3D20190801091650&ticket=79*ST14F1F2036D23355EEE2500EFFFE97916";
+//        webView.url = @"https://www.baidu.com";
+//
+//        webView;
+//
+//    }) animated:true];
+    
+    NSString *s = @"13812345678sf2Hi3eWr513815678".ritl_md5ForUpper32Bate;
+    NSLog(@"%@",s);
     
 }
 
