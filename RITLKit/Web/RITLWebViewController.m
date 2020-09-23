@@ -24,7 +24,6 @@
 
 @interface RITLWebViewController ()<WKScriptMessageHandler>
 
-@property (nonatomic, weak)UIBarButtonItem *backItem;
 @property (nonatomic, strong, readwrite) WKWebView *webView;
 
 @end

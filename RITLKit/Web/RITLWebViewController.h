@@ -34,6 +34,8 @@ typedef void(^RITLWebControllerTapHandler)(RITLWebViewController *viewController
 @property (nonatomic, copy, nullable)NSArray<id <WKScriptMessageHandler,RITLScriptMessageHandler> > * scriptMessageHandlers;
 /// 加载的控制器
 @property (nonatomic, strong, readonly) WKWebView *webView;
+/// 自定义的backItem
+@property (nonatomic, strong, nullable) UIBarButtonItem *backItem;
 /// 设置独立的代理
 @property (nonatomic, weak, nullable)id <WKNavigationDelegate> navigationDelegate;
 /// 网页加载的url
