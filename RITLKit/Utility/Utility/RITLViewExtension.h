@@ -36,11 +36,11 @@ NS_ASSUME_NONNULL_BEGIN
  [view addSubview:subView1];
  
  */
-NS_CLASS_DEPRECATED_IOS(2_0, 9_0, "不建议使用，会造成内存泄露") @interface UIView (RITLViewAddHandler)
+//NS_CLASS_DEPRECATED_IOS(2_0, 9_0, "不建议使用，会造成内存泄露") @interface UIView (RITLViewAddHandler)
 
 /// 追加视图
-@property (nonatomic, strong, readonly) RITLViewHandler *ritl_view;
+//@property (nonatomic, strong, readonly) RITLViewHandler *ritl_view;
 
-@end
+//@end
 
 NS_ASSUME_NONNULL_END

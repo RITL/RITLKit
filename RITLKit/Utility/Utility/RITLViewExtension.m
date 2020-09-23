@@ -53,26 +53,26 @@
 @end
 
 
-@implementation UIView (RITLViewAddHandler)
-
-- (RITLViewHandler *)ritl_view
-{
-    RITLViewHandler* handler = objc_getAssociatedObject(self, _cmd);
-    
-    if (handler) {
-        
-        return handler;
-    }
-    
-    handler = RITLViewHandler.new;
-    handler.containView = self;
-    
-    objc_setAssociatedObject(self, _cmd, handler, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    
-    return handler;
-}
-
-
-
-
-@end
+//@implementation UIView (RITLViewAddHandler)
+//
+//- (RITLViewHandler *)ritl_view
+//{
+//    RITLViewHandler* handler = objc_getAssociatedObject(self, _cmd);
+//
+//    if (handler) {
+//
+//        return handler;
+//    }
+//
+//    handler = RITLViewHandler.new;
+//    handler.containView = self;
+//
+//    objc_setAssociatedObject(self, _cmd, handler, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//
+//    return handler;
+//}
+//
+//
+//
+//
+//@end

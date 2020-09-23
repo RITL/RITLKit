@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'RITLKit'
-  s.version      = '2.0.3'
+  s.version      = '2.0.4'
   s.summary      = "The commonly Used Objective-C RITLKit."
 
   s.homepage     = "https://github.com/RITL/RITLKit"
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.authors       = { "Yuexiaowen" => "yuexiaowen108@gmail.com" }
 
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "9.0"
 
   s.source       = { :git => "https://github.com/RITL/RITLKit.git", :tag => s.version }
   s.source_files = "RITLKit/RITLKit.h"
