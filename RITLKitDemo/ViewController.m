@@ -24,6 +24,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    if (RITL_HAVE_PHONE_HEADER) {
+        NSLog(@"我是刘海屏");
+    }else {
+        NSLog(@"我不是刘海屏");
+    }
     
 //    UITextField *f = UITextField.new;
 //    [f ritl_setPlaceholderFont:[UIFont systemFontOfSize:10]];
